@@ -39,7 +39,10 @@
           }
         }
       },
-      "block_order": ["announcement_jnPWPW", "announcement_zGUMaG"],
+      "block_order": [
+        "announcement_jnPWPW",
+        "announcement_zGUMaG"
+      ],
       "settings": {
         "show_line_separator": true,
         "close_btn": "1",

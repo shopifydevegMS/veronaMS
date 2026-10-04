@@ -59,11 +59,11 @@
             "content_position_type": "container",
             "position_x": 50,
             "position_y": 50,
-            "content_position": "center-start",
+            "content_position": "start",
             "alignment": "left",
             "position_x_mb": 50,
             "position_y_mb": 50,
-            "content_position_mb": "center-start",
+            "content_position_mb": "start-center",
             "alignment_mb": "left",
             "overlay_content": false,
             "overlay_color": "#000000",
@@ -124,17 +124,21 @@
           "blocks": {}
         }
       },
-      "block_order": ["slide_item_GJUjrM", "slide_item_9kiVJn", "slide_item_q8Xjwz"],
+      "block_order": [
+        "slide_item_GJUjrM",
+        "slide_item_9kiVJn",
+        "slide_item_q8Xjwz"
+      ],
       "settings": {
-        "image_height": "fixed",
+        "image_height": "adapt_image",
         "fixed_height": 670,
-        "image_height_mb": "fixed",
+        "image_height_mb": "adapt_image",
         "fixed_height_mb": 180,
         "is_fade": false,
         "loop": true,
         "autoplay": 7,
         "pauseOnHover": true,
-        "navUI": false,
+        "navUI": true,
         "nav_visible": "always",
         "nav_style": "simple",
         "nav_shape": "default",
@@ -151,7 +155,7 @@
         "color_scheme": "scheme-1",
         "background_opacity": 0,
         "full_width": true,
-        "mg": ",,48px,",
+        "mg": "",
         "mg_mb": "",
         "pd": "",
         "pd_mb": ",,22px,"
@@ -261,7 +265,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_BYGwXT"]
+          "block_order": [
+            "heading_section_BYGwXT"
+          ]
         }
       },
       "block_order": [
@@ -292,7 +298,7 @@
         "col_tb": "4",
         "col_mb": "3",
         "space_items": "x",
-        "layout_mode": "grid",
+        "layout_mode": "carousel",
         "loop": false,
         "autoplay": 0,
         "pauseOnHover": false,
@@ -314,9 +320,9 @@
         "background_opacity": 1,
         "section_layout": "wrapper_container",
         "hdt_background_parallax": false,
-        "mg": ",,48px,",
+        "mg": "",
         "mg_mb": ",,30px,",
-        "pd": "",
+        "pd": "48px,,48px,",
         "pd_mb": ""
       }
     },
@@ -397,10 +403,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_rgjWE7", "sub_heading_section_URb48x"]
+          "block_order": [
+            "heading_section_rgjWE7",
+            "sub_heading_section_URb48x"
+          ]
         }
       },
-      "block_order": ["product_grid_JJ7DRU"],
+      "block_order": [
+        "product_grid_JJ7DRU"
+      ],
       "settings": {
         "colors_by_section": true,
         "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
@@ -525,7 +536,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_EnCehW", "sub_heading_section_GtTPR7"]
+          "block_order": [
+            "heading_section_EnCehW",
+            "sub_heading_section_GtTPR7"
+          ]
         }
       },
       "block_order": [
@@ -660,10 +674,15 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_YkL4Bi", "sub_heading_section_a6RkEK"]
+          "block_order": [
+            "heading_section_YkL4Bi",
+            "sub_heading_section_a6RkEK"
+          ]
         }
       },
-      "block_order": ["product_grid_bHNAMN"],
+      "block_order": [
+        "product_grid_bHNAMN"
+      ],
       "settings": {
         "colors_by_section": true,
         "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
@@ -765,7 +784,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_kYD8nt", "sub_heading_section_htYL9p"]
+          "block_order": [
+            "heading_section_kYD8nt",
+            "sub_heading_section_htYL9p"
+          ]
         }
       },
       "block_order": [
@@ -1102,7 +1124,11 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_custom_myNJMq", "text_custom_nRCBJj", "button_Gt6CJW"],
+      "block_order": [
+        "text_custom_myNJMq",
+        "text_custom_nRCBJj",
+        "button_Gt6CJW"
+      ],
       "name": "Banner parallax",
       "settings": {
         "image": "shopify://shop_images/761fc34b3974a6e812a4e81d32c0416279dbecf0.png",
@@ -1226,7 +1252,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["heading_section_dfzGBp"]
+          "block_order": [
+            "heading_section_dfzGBp"
+          ]
         }
       },
       "block_order": [
