@@ -32,6 +32,7 @@
             {% if collection_des == "10" %} <span class="hdt-count">{{ collection.all_products_count | default: 0 }}</span> {% endif %}
             {% if collection_des == "11" %} <span class="hdt-count"> ({{ collection.all_products_count | default: 0 }}) </span> {% endif %}
           </a>
+          <a class="ms-collection-item-desc" href="{{ collection_link }}">تسوق الآن</a>
           {%- if section.settings.show_count  -%}
             <a class="hdt-collection-count {% if section.settings.content_size == "sm" %}hdt-text-sm{% else %}hdt-text-base{% endif %} hdt-inline-flex hdt-align-center hdt-justify-center" href="{{ collection_link }}">
               <span class="hdt-count">{{ collection.all_products_count | default: 0 }}</span> <span class="hdt-text">{{ count_label }}</span>

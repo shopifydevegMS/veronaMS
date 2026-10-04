@@ -112,11 +112,24 @@
       transform: translateX(0.25rem);
     }
   }
+  
+  @media (max-width: 575.98px) {
+    .hdt-announcement-bar-customMS {
+    height: 23px !important;
+
+  }
+  }
+  .ms-d-none{
+    display: none;
+  }
+  .ms-maxContent{
+    width: max-content;
+   }
 {%- endstyle -%}
 {%- assign total_size = 0 -%}
 {%- if section.settings.close_btn != '0' -%}
   {%- capture cap_btn -%}
-    <div class="hdt-announcement-bar__close hdt-s-text hdt-op-0 hdt-hidden md:hdt-block">
+    <div class="hdt-announcement-bar__close hdt-s-text hdt-op-0 hdt-hidden md:hdt-block ms-d-none">
       <wrapp-close-announce class="hdt-flex hdt-align-center hdt-justify-end hdt-p-0" aria-label="{{ 'accessibility.close' | t | escape }}">
         <svg role="presentation" class="hdt-iconsvg-close hdt-inline-block hdt-s-text" viewBox="0 0 16 14" width="16"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg>
         {{- 'sections.announcements.close' | t -}}
@@ -126,14 +139,14 @@
 {%- endif -%}
 <svg class="hdt-hidden"><symbol id="icon-{{ section.id }}" viewBox="0 0 14 10" fill="none" width="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></symbol></svg>
 {%- capture cap_arrow %}{% render 'icons', icon: 'arrow_right', class: 'hdt-inline-block hdt-s-text' %}{% endcapture -%}
-<div class="hdt-announcement-bar hdt-s-gradient hdt-type-close-{{ section.settings.close_btn  }}{% if section.settings.show_line_separator and section.blocks.size > 0 %} hdt-announcement-bar--bottom-border{% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
-  <div class="hdt-container{% if section.settings.full_width %}-full hdt-px-15{% endif %}">
+<div class="hdt-announcement-bar hdt-announcement-bar-customMS hdt-s-gradient hdt-type-close-{{ section.settings.close_btn  }}{% if section.settings.show_line_separator and section.blocks.size > 0 %} hdt-announcement-bar--bottom-border{% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %}>
+  <div class="hdt-container{% if section.settings.full_width %}-full {% endif %}">
     {%- if section.blocks.size > 0 -%}
       <div class="hdt-announcement-bar__grid">
       {{- cap_btn | replace: 'hdt-announcement-bar__close', 'hdt-announcement-bar__close hdt-block-empty'-}}
       {% comment %} , "autoHeight": true {% endcomment %}
         {% if section.settings.design == 'slider' %}
-          <hdt-slider {% if section.settings.effect == 'fade' %} isfade{% endif %} class="hdt-announcement-bar__wrap hdt-text-center hdt-slider lg:hdt-slides-1 hdt-relative hdt-oh hdt-s-text" config='{"loop": true, "autoPlay": {{ section.settings.au_time | times: 1000 }}, "pauseOnHover":{{ section.settings.pause_when_hover }} }'>
+          <hdt-slider {% if section.settings.effect == 'fade' %} isfade{% endif %} class="hdt-text-center hdt-slider lg:hdt-slides-1 hdt-relative hdt-oh hdt-s-text" config='{"loop": true, "autoPlay": {{ section.settings.au_time | times: 1000 }}, "pauseOnHover":{{ section.settings.pause_when_hover }} }'>
             <div class="hdt-slider__viewport">
               <div class="hdt-slider__container hdt-align-center">
               {%- for block in section.blocks -%}
@@ -147,7 +160,7 @@
                     <span  style="font-size: clamp({{ block.settings.hdt_font_size | divided_by: 2 | at_least: 12 }}px, {{ block.settings.hdt_font_size | divided_by: 10.0 }}vw, {{ block.settings.hdt_font_size | plus: 0.0 }}px);">{{ block.settings.text_highlight }}</span>
                   {%- endcapture -%}
                   <div class="hdt-slider__slide">
-                    <div class="hdt-announcement-bar__slider-content hdt-relative">
+                    <div class="hdt-announcement-bar__slider-content hdt-relative ms-maxContent">
                       {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" class="hdt-absolute hdt-top-0 hdt-right-0 hdt-bottom-0 hdt-left-0 hdt-left-0"></a>{%- endif -%}
                       <div class="hdt-announcement-bar__text hdt-inline-block{% if block.settings.adding_border %} hdt-rte{% else %} hdt-tag-list{% endif %}">{{ block.settings.text | replace: '[countdown]', cap_date | replace: '[icon_arrow]', cap_arrow | replace: '[text_highlight]', text_highlight }}</div>
                     </div>
