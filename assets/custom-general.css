@@ -1,0 +1,82 @@
+.ms-pr-title--one-line .hdt-card-product__title.hdt-line-clamp {
+  display: block;
+  -webkit-box-orient: horizontal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 21px;
+  width: 160px;
+  max-width: 100%;
+}
+.ms-hide-sale-badge .hdt-badge__on-sale {
+  display: none !important;
+}
+.ms-hide-new-badge .hdt-badge__new {
+  display: none !important;
+}
+.ms-hide-bestseller-badge .hdt-badge__custom[class*="الأكثر-مبيعا"] {
+  display: none !important;
+}
+.ms-badges-right .hdt-badge__wrapp {
+  left: auto !important;
+  right: 5px !important;
+  align-items: flex-end !important;
+}
+.ms-badges-top-rounded .hdt-badge__wrapp {
+  top: 10px;
+}
+.ms-badges-top-rounded .hdt-badge {
+  border-radius: 3px;
+}
+.ms-card-info-box .hdt-card-product {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 195px;
+  height: 305px;
+}
+.ms-card-info-box .hdt-card-product__info {
+  background-color: white;
+  margin-top: 0;
+  padding-top: 1.5rem;
+  text-align: right !important;
+  justify-items: end !important;
+  width: 195px;
+}
+.ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  justify-self: stretch !important;
+  width: 100% !important;
+  margin-inline: 0 !important;
+  text-align: center !important;
+}
+.ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 wrapp-hdt-pr-frm,
+.ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 form {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-inline: 0 !important;
+}
+.ms-card-info-box .hdt-card-product__info .hdt-card-product__btn-ultra {
+  justify-content: center !important;
+  margin-inline: auto !important;
+}
+.ms-card-info-box .hdt-card-product__info .hdt-card-product__title,
+.ms-card-info-box .hdt-card-product__info .hdt-price-wrapp {
+  text-align: start !important;
+  justify-self: start !important;
+  width: 100% !important;
+  margin-inline: 0 !important;
+}
+.ms-card-info-box .hdt-card-product__info .hdt-price__list {
+  justify-content: start !important;
+}
+.ms-card-info-box .hdt-card-product__btn-ultra .hdt-pr-card-icon {
+  display: none !important;
+}
+.ms-card-info-box .hdt-card-product__btn-ultra:hover {
+  background-color: #C6A490;
+  color: #1A2A3A;
+}

@@ -11,17 +11,46 @@
 {%- endif -%}
 }
 {% render 'spacing-vars', box: section %}
-.nav-ms {
-  width: 150px !important;
-  top: 645px !important;
-}
+  {% if section.settings.section-height-id != blank %}
+    .ms-section-height-{{ section.id }} {
+      height: {{ section.settings.section-height-id }}{% unless section.settings.section-height-id contains 'px' %}px{% endunless %};
+    }
+  {% endif %}
+  {% if section.settings.section-height-mobile-id != blank %}
+    @media (max-width: 767px) {
+      .ms-section-height-{{ section.id }} {
+        height: {{ section.settings.section-height-mobile-id }}{% unless section.settings.section-height-mobile-id contains 'px' %}px{% endunless %};
+      }
+    }
+  {% endif %}
+  {%- if section.settings.navUI and section.settings.nav_inline_dots -%}
+    #Slider-{{ section.id }} .hdt-navigation.hdt-nav-inline-dots {
+      position: absolute;
+      top: auto;
+      bottom: {{ section.settings.pag_mgt }}px;
+      left: 0;
+      right: 0;
+      transform: none;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+    #Slider-{{ section.id }} .hdt-navigation.hdt-nav-inline-dots .hdt-slider__button {
+      position: static;
+      transform: none;
+    }
+    #Slider-{{ section.id }} .hdt-navigation.hdt-nav-inline-dots .hdt-slider__dots {
+      position: static;
+      width: auto;
+      margin: 0;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <div
-  class="hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient"
-{% if section.settings.section-height-id %}style="height:{{ section.settings.section-height-id }}px" {% endif %}
-  {% comment %} to do : add media query for mobile {% endcomment %}
-{% if section.settings.section-height-id %}style="height:{{ section.settings.section-height-mobile-id }}px" {% endif %}
+  class="hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient ms-section-height-{{ section.id }}"
   {%- if section.settings.colors_by_section %}
   color-scheme="{{ section.settings.color_scheme }}"
   style="--background-opacity: {{ section.settings.background_opacity }};"
@@ -36,14 +65,14 @@
     id="Slider-{{ section.id }}"
     autoheight
     class="hdt-slider hdt-relative hdt-container{% if section.settings.full_width %}-full{% endif %} hdt-slideshow hdt-slides-1 hdt-relative hdt-slider-center-{{ section.settings.carousel_center }}"
-    config='{"loop": {{ section.settings.loop }}, "navUI": {{ section.settings.navUI }}, "dotUI": {{ section.settings.dotUI }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoHeight": true, "slidesToScroll": 1 }'>
+    config='{"loop": {{ section.settings.loop }}, "navUI": {{ section.settings.navUI }}, "dotUI": {% if section.settings.navUI and section.settings.nav_inline_dots %}true{% else %}{{ section.settings.dotUI }}{% endif %}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoHeight": true, "slidesToScroll": 1 }'>
     <div class="hdt-slider__viewport md:hdt-height--{{ section.settings.image_height }} hdt-height--{{ section.settings.image_height_mb }}{% unless section.settings.full_width %} {{ section.settings.rounded }}{% endunless %}">
       <div class="hdt-slider__container">
         {% content_for "blocks" %}
       </div>
     </div>
-    {%- if section.settings.navUI -%}
-      <div class="hdt-navigation nav-ms hdt-position-default hdt-visible-{{ section.settings.nav_visible }} hdt-style-{{ section.settings.nav_style }} hdt-shape-{{ section.settings.nav_shape }} hdt-size-{{ section.settings.nav_size }} hdt-hide-mobile-{{ section.settings.nav_hide_mobile }}">
+    {%- if section.settings.navUI and section.settings.nav_inline_dots -%}
+      <div class="hdt-navigation hdt-nav-inline-dots hdt-visible-{{ section.settings.nav_visible }} hdt-style-{{ section.settings.nav_style }} hdt-shape-{{ section.settings.nav_shape }} hdt-size-{{ section.settings.nav_size }} hdt-hide-mobile-{{ section.settings.nav_hide_mobile }}">
         <button
           aria-controls="Slider-{{ section.id }}"
           class="hdt-slider__button hdt-slider__button--prev"
@@ -58,6 +87,13 @@
             viewBox="0 0 7 11"
             fill="none"><path d="M5.5 11L0 5.5L5.5 0L6.47625 0.97625L1.9525 5.5L6.47625 10.0238L5.5 11Z" fill="currentColor" /></svg>
         </button>
+        <div
+          hdt-slider-dots
+          aria-controls="Slider-{{ section.id }}"
+          class="hdt-slider__dots hdt-pagination hdt-position-{{ section.settings.pag_position }} hdt-style-{{ section.settings.pag_style }} hdt-radius-{{ section.settings.pag_rounded }} hdt-hide-mobile-{{ section.settings.pag_hide_mobile }}"
+          style="--space-between: {{ section.settings.pag_space }}px; --margin-top: 0px;"
+          hdt-reveal="slide-in"
+          timeline></div>
         <button
           aria-controls="Slider-{{ section.id }}"
           class="hdt-slider__button hdt-slider__button--next"
@@ -73,15 +109,48 @@
             fill="none"><path d="M1.5 11L7 5.5L1.5 0L0.52375 0.97625L5.0475 5.5L0.52375 10.0238L1.5 11Z" fill="currentColor" /></svg>
         </button>
       </div>
-    {%- endif -%}
-    {%- if section.settings.dotUI -%}
-      <div
-        hdt-slider-dots
-        aria-controls="Slider-{{ section.id }}"
-        class="hdt-slider__dots hdt-pagination hdt-position-{{ section.settings.pag_position }} hdt-style-{{ section.settings.pag_style }} hdt-radius-{{ section.settings.pag_rounded }} hdt-hide-mobile-{{ section.settings.pag_hide_mobile }}"
-        style="--space-between: {{ section.settings.pag_space }}px; --margin-top: {{ section.settings.pag_mgt }}px;"
-        hdt-reveal="slide-in"
-        timeline></div>
+    {%- else -%}
+      {%- if section.settings.navUI -%}
+        <div class="hdt-navigation hdt-position-default hdt-visible-{{ section.settings.nav_visible }} hdt-style-{{ section.settings.nav_style }} hdt-shape-{{ section.settings.nav_shape }} hdt-size-{{ section.settings.nav_size }} hdt-hide-mobile-{{ section.settings.nav_hide_mobile }}">
+          <button
+            aria-controls="Slider-{{ section.id }}"
+            class="hdt-slider__button hdt-slider__button--prev"
+            type="button"
+            disabled
+            name="previous"
+            aria-label="previous">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="11"
+              viewBox="0 0 7 11"
+              fill="none"><path d="M5.5 11L0 5.5L5.5 0L6.47625 0.97625L1.9525 5.5L6.47625 10.0238L5.5 11Z" fill="currentColor" /></svg>
+          </button>
+          <button
+            aria-controls="Slider-{{ section.id }}"
+            class="hdt-slider__button hdt-slider__button--next"
+            type="button"
+            disabled
+            name="next"
+            aria-label="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="11"
+              viewBox="0 0 7 11"
+              fill="none"><path d="M1.5 11L7 5.5L1.5 0L0.52375 0.97625L5.0475 5.5L0.52375 10.0238L1.5 11Z" fill="currentColor" /></svg>
+          </button>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.dotUI -%}
+        <div
+          hdt-slider-dots
+          aria-controls="Slider-{{ section.id }}"
+          class="hdt-slider__dots hdt-pagination hdt-position-{{ section.settings.pag_position }} hdt-style-{{ section.settings.pag_style }} hdt-radius-{{ section.settings.pag_rounded }} hdt-hide-mobile-{{ section.settings.pag_hide_mobile }}"
+          style="--space-between: {{ section.settings.pag_space }}px; --margin-top: {{ section.settings.pag_mgt }}px;"
+          hdt-reveal="slide-in"
+          timeline></div>
+      {%- endif -%}
     {%- endif -%}
   </hdt-slideshow>
 </div>
@@ -214,6 +283,12 @@
         "id": "navUI",
         "label": "t:blocks.carousel.settings.navigation.use_navigation",
         "default": false
+      }, {
+        "type": "checkbox",
+        "id": "nav_inline_dots",
+        "label": "Arrows with dots",
+        "default": false,
+        "visible_if": "{{ section.settings.navUI }}"
       }, {
         "type": "select",
         "id": "nav_visible",

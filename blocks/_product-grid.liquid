@@ -21,7 +21,7 @@
   (min-width: 1150px) calc(({{ current_width }} -  ({{ space_item }}px * ( {{ block.settings.col_dk }} - 1 ))) * 1 / {{ block.settings.col_dk }}),(min-width: 768px) calc( ({{ current_width_tb }} - ({{ space_item_tb }}px * ( {{ block.settings.col_tb }} - 1 ))) * 1 / {{ block.settings.col_tb }}), calc( ({{ current_width_mb }} - ({{ space_item_mb }}px * ( {{ block.settings.col_mb }} - 1 ) )) * 1 / {{ block.settings.col_mb }})
 {%- endcapture -%}
 {%- if request.visual_preview_mode or block.settings.product_list == blank and block.settings.collection == blank %}
-  <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}">
+  <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}{% if block.settings.enable_one_line_title %} ms-pr-title--one-line{% endif %}{% if block.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if block.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if block.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}{% if block.settings.enable_badges_right %} ms-badges-right{% endif %} ms-badges-top-rounded ms-card-info-box">
     {%- liquid
       for i in (1..block.settings.products_count)
         capture current
@@ -35,7 +35,7 @@
 {%- else -%}
   {%- if block.settings.product_list != blank %}
     {%- paginate block.settings.product_list by block.settings.products_count -%}
-      <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}">
+      <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}{% if block.settings.enable_one_line_title %} ms-pr-title--one-line{% endif %}{% if block.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if block.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if block.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}{% if block.settings.enable_badges_right %} ms-badges-right{% endif %} ms-badges-top-rounded ms-card-info-box">
         {%- liquid
           if block.settings.product_list != blank
             case block.settings.product_des
@@ -153,7 +153,7 @@
           endif
         -%}
       </hdt-reval-items>
-      {%- if block.settings.pagination %}
+      {%- if block.settings.pagination and block.settings.hide-pagination == false %}
         {%- if paginate.next -%}
           {{ 'hdt-pagination.css' | asset_url | stylesheet_tag }}
           {%- if block.settings.pagination_type == "view_all" -%}
@@ -202,7 +202,7 @@
   {%- else -%}
     {%- assign collection = collections[block.settings.collection] -%}
     {%- paginate collection.products by block.settings.products_count -%}
-      <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}">
+      <hdt-reval-items reveal-on-scroll="true" id="products-{{ section.id }}-{{ block.settings.collection.id }}" scroll-into-view class="hdt-collection-products hdt-collection-has-pr{{ block.settings.product_des }} hdt-pr-border_{{ block.settings.pr_border }} hdt-row-grid hdt-row-grid--modify hdt-justify-center hdt-ratio--{{ block.settings.image_ratio }} {% unless block.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-spacing-{{ block.settings.space_items }} lg:hdt-grid-cols-{{ block.settings.col_dk }} md:hdt-grid-cols-{{ block.settings.col_tb }} hdt-grid-cols-{{ block.settings.col_mb }}{% if block.settings.enable_one_line_title %} ms-pr-title--one-line{% endif %}{% if block.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if block.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if block.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}{% if block.settings.enable_badges_right %} ms-badges-right{% endif %} ms-badges-top-rounded ms-card-info-box">
         {%- liquid
           if block.settings.collection != blank
             case block.settings.product_des
@@ -350,7 +350,7 @@
           endif
         -%}
       </hdt-reval-items>
-      {%- if block.settings.pagination %}
+      {%- if block.settings.pagination and block.settings.hide-pagination == false %}
         {%- if paginate.next -%}
           {{ 'hdt-pagination.css' | asset_url | stylesheet_tag }}
           {%- if block.settings.pagination_type == "view_all" -%}
@@ -546,6 +546,36 @@
       "default": false
     },
     {
+      "type": "checkbox",
+      "id": "enable_one_line_title",
+      "label": "Enable one line title",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_sale_badge",
+      "label": "Hide sale badge",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_new_badge",
+      "label": "Hide new badge",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_bestseller_badge",
+      "label": "Hide bestseller badge",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_badges_right",
+      "label": "Move badges to right",
+      "default": false
+    },
+    {
       "type": "select",
       "id": "col_dk",
       "label": "t:sections.all.items_row.desktop",
@@ -674,6 +704,13 @@
         }
       ],
       "default": "load_more",
+      "visible_if": "{{ block.settings.pagination }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide-pagination",
+      "label": "hide pagination button",
+      "default": false,
       "visible_if": "{{ block.settings.pagination }}"
     },
     {
