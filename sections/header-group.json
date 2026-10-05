@@ -46,6 +46,7 @@
       "settings": {
         "show_line_separator": true,
         "close_btn": "1",
+        "show_close_btn": false,
         "height": 33,
         "fontsize": 13,
         "design": "slider",
