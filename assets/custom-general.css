@@ -33,14 +33,32 @@
   overflow: hidden;
   width: 195px;
   height: 305px;
+  display: flex;
+  flex-direction: column;
+}
+.ms-card-info-box .hdt-card-product__wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 0 !important;
+}
+.ms-card-info-box .hdt-card-product__media {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
 }
 .ms-card-info-box .hdt-card-product__info {
   background-color: white;
   margin-top: 0;
-  padding-top: 1.5rem;
+  padding: 12px !important;
   text-align: right !important;
   justify-items: end !important;
   width: 195px;
+  height: 130px !important;
+  min-height: 130px !important;
+  max-height: 130px !important;
+  flex: 0 0 130px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
 }
 .ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 {
   display: flex !important;
@@ -50,6 +68,8 @@
   width: 100% !important;
   margin-inline: 0 !important;
   text-align: center !important;
+  padding-bottom: 18px !important;
+  box-sizing: border-box !important;
 }
 .ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 wrapp-hdt-pr-frm,
 .ms-card-info-box .hdt-card-product__info .hdt-pr-btns-group1 form {
@@ -62,6 +82,10 @@
 .ms-card-info-box .hdt-card-product__info .hdt-card-product__btn-ultra {
   justify-content: center !important;
   margin-inline: auto !important;
+  width: 170px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 .ms-card-info-box .hdt-card-product__info .hdt-card-product__title,
 .ms-card-info-box .hdt-card-product__info .hdt-price-wrapp {
@@ -72,6 +96,7 @@
 }
 .ms-card-info-box .hdt-card-product__info .hdt-price__list {
   justify-content: start !important;
+  flex-direction: row-reverse; 
 }
 .ms-card-info-box .hdt-card-product__btn-ultra .hdt-pr-card-icon {
   display: none !important;
@@ -79,4 +104,7 @@
 .ms-card-info-box .hdt-card-product__btn-ultra:hover {
   background-color: #C6A490;
   color: #1A2A3A;
+}
+.ms-card-info-box hdt-price {
+  font-weight: 700 !important;
 }
