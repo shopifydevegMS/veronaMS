@@ -234,9 +234,62 @@
         {
           "value": "15",
           "label": "15"
+        },
+        {
+          "value": "16",
+          "label": "16 - Title above box + Shop link inside"
         }
       ],
       "default": "1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shop_link",
+      "label": "Show shop link ",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shop_link_label",
+      "label": "Shop link label",
+      "default": "تسوق الآن",
+      "visible_if": "{{ section.settings.show_shop_link }}"
+    },
+    {
+      "type": "range",
+      "id": "shop_btn_min_width",
+      "label": "Shop button min width",
+      "min": 0,
+      "max": 300,
+      "step": 2,
+      "unit": "px",
+      "default": 0,
+      "info": "0 = auto (theme default)",
+      "visible_if": "{{ section.settings.show_shop_link }}"
+    },
+    {
+      "type": "range",
+      "id": "shop_btn_min_height",
+      "label": "Shop button min height",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "info": "0 = auto (theme default)",
+      "visible_if": "{{ section.settings.show_shop_link }}"
+    },
+    {
+      "type": "range",
+      "id": "shop_btn_radius",
+      "label": "Shop button radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 4,
+      "info": "Fixed 4px by default, not from theme settings",
+      "visible_if": "{{ section.settings.show_shop_link }}"
     },
     {
       "type": "select",

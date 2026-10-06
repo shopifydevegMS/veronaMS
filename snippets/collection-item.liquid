@@ -4,6 +4,24 @@
   assign title = block.settings.title | default: collection.title
   assign count_label = section.settings.count_label
   assign collection_link = block.settings.collection_link | default: collection.url
+  assign show_shop_link = true
+  if section.settings.show_shop_link == false
+    assign show_shop_link = false
+  endif
+  assign shop_link_label = section.settings.shop_link_label | default: 'تسوق الآن'
+  assign shop_btn_min_width = section.settings.shop_btn_min_width | default: 0
+  assign shop_btn_min_height = section.settings.shop_btn_min_height | default: 0
+  assign shop_btn_radius = section.settings.shop_btn_radius | default: 4
+  capture shop_btn_style
+    if shop_btn_min_width > 0
+      echo 'min-width:' | append: shop_btn_min_width | append: 'px;'
+    endif
+    if shop_btn_min_height > 0
+      echo 'min-height:' | append: shop_btn_min_height | append: 'px;'
+    endif
+    echo 'border-radius:' | append: shop_btn_radius | append: 'px;'
+  endcapture
+  assign shop_btn_style = shop_btn_style | strip
 -%}
 <div class="hdt-collection-item hdt-collection-style{{ collection_des }} {{ class }}{% if section.settings.layout_mode == 'packery' %} lg:hdt-custom-col-{{ block.settings.col_dk }} md:hdt-custom-col-{{ block.settings.col_tb }} hdt-custom-col-{{ block.settings.col_mb }}{% endif %}" {{ block.shopify_attributes }} item-selector>
   <div class="hdt-collection-inner hdt-relative hdt-oh hdt-grid" timeline hdt-reveal="slide-in">
@@ -23,7 +41,7 @@
       </span>
       <a data-pr-href class="hdt-full-width-link"  aria-label="link" href="{{ collection_link }}"></a>
     </div>
-    {%- if title != blank and collection_des != "15" -%}
+    {%- if title != blank and collection_des != "15" and collection_des != "16" -%}
       <div class="hdt-collection-content hdt-absolute hdt-place-self-{{ section.settings.content_position }} ms-collection-item">
         <div class="hdt-collection-wrapper hdt-flex hdt-flex-col hdt-justify-center hdt-align-center">
           <a data-pr-href class="hdt-full-width-link"  aria-label="link" href="{{ collection_link }}"></a>
@@ -32,7 +50,26 @@
             {% if collection_des == "10" %} <span class="hdt-count">{{ collection.all_products_count | default: 0 }}</span> {% endif %}
             {% if collection_des == "11" %} <span class="hdt-count"> ({{ collection.all_products_count | default: 0 }}) </span> {% endif %}
           </a>
-          <a class="ms-collection-item-desc" href="{{ collection_link }}">تسوق الآن</a>
+          {%- if show_shop_link and shop_link_label != blank -%}
+            <a class="ms-collection-item-desc" href="{{ collection_link }}">{{ shop_link_label }}</a>
+          {%- endif -%}
+          {%- if section.settings.show_count  -%}
+            <a class="hdt-collection-count {% if section.settings.content_size == "sm" %}hdt-text-sm{% else %}hdt-text-base{% endif %} hdt-inline-flex hdt-align-center hdt-justify-center" href="{{ collection_link }}">
+              <span class="hdt-count">{{ collection.all_products_count | default: 0 }}</span> <span class="hdt-text">{{ count_label }}</span>
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+    {%- if title != blank and collection_des == "16" -%}
+      <div class="hdt-collection-content hdt-absolute hdt-place-self-{{ section.settings.content_position }} ms-collection-item ms-collection-item-16">
+        <a class="ms-collection-title-above hdt-truncate hdt-text-{{ section.settings.content_size }} hdt-font-{{ section.settings.content_weight }}" href="{{ collection_link }}">
+          <span class="hdt-collection-title-text hdt-truncate">{{ title }}</span>
+        </a>
+        <div class="hdt-collection-wrapper hdt-flex hdt-flex-col hdt-justify-center hdt-align-center">
+          {%- if show_shop_link and shop_link_label != blank -%}
+            <a class="ms-collection-item-desc hdt-btn hdt-oh hdt-inline-flex hdt-align-center hdt-justify-center hdt-relative hdt-btn--size-m hdt-font-medium" href="{{ collection_link }}"{% if shop_btn_style != blank %} style="{{ shop_btn_style }}"{% endif %}><span class="hdt-truncate">{{ shop_link_label }}</span></a>
+          {%- endif -%}
           {%- if section.settings.show_count  -%}
             <a class="hdt-collection-count {% if section.settings.content_size == "sm" %}hdt-text-sm{% else %}hdt-text-base{% endif %} hdt-inline-flex hdt-align-center hdt-justify-center" href="{{ collection_link }}">
               <span class="hdt-count">{{ collection.all_products_count | default: 0 }}</span> <span class="hdt-text">{{ count_label }}</span>

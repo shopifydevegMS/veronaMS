@@ -56,11 +56,6 @@
   container-name: card-collection;
   container-type: inline-size;
 }
-.ms-collection-item {
-  box-shadow: 0px 2px 14px 0px #00000012;
-  bottom: 22px;
-  right: 22px;
-}
 .hdt-collection-title {
   min-height: 24px;
   line-height: var(--font-heading-line-height);
@@ -80,10 +75,6 @@
     min-height: 44px;
     min-width: 150px;
   }
-}
-
-.ms-collection-item-desc {
-  color: #9e7c4e;
 }
 
 .hdt-collection-content {
@@ -161,10 +152,6 @@
   )
   .hdt-collection-inner {
   border-radius: var(--radius-collection-card);
-}
-.ms-collection-inner {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 :where(
     .hdt-collection-style5,
