@@ -152,7 +152,7 @@
         "pag_position": "center",
         "pag_rounded": true,
         "pag_space": 6,
-        "pag_mgt": 20,
+        "pag_mgt": 30,
         "pag_hide_mobile": true,
         "colors_by_section": true,
         "color_scheme": "scheme-1",
@@ -261,6 +261,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -284,6 +285,8 @@
       "settings": {
         "collection_list": [],
         "collection_des": "5",
+        "show_shop_link": true,
+        "shop_link_label": "تسوق الآن",
         "content_size": "lg",
         "content_weight": "semibold",
         "content_position": "center",
@@ -391,6 +394,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -512,7 +516,7 @@
             "horizontal": false,
             "alignment": "center",
             "heading_gap": 15,
-            "margin_bottom": 0
+            "margin_bottom": 16
           },
           "blocks": {
             "heading_section_EnCehW": {
@@ -523,6 +527,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -533,7 +538,7 @@
               "type": "_sub_heading_section",
               "name": "t:blocks.section_heading.sub_heading",
               "settings": {
-                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة أو لتقديم هدية مميزة.</p>",
+                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة<br/>&nbsp;أو لتقديم هدية مميزة.</p>",
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
                 "text_size": "custom",
@@ -559,23 +564,24 @@
       ],
       "name": "Icon box",
       "settings": {
+        "box_design": "design_1",
         "enable_border": false,
         "enable_box_shadow": false,
-        "border_color": "#f6f6f8",
+        "border_color": "#eee4de",
         "heading_color": "#2a3a4a",
         "icon_color": "#222",
-        "description_color": "#d0b4a6",
-        "color_box": "rgba(0,0,0,0)",
-        "color_box_hover": "#eb4c4e",
-        "color_content_hover": "#fff",
+        "description_color": "#eee4de",
+        "color_box": "#1a2a3a",
+        "color_box_hover": "#1a2a3a",
+        "color_content_hover": "#eee4de",
         "source": "image",
         "padding": "20px,20px,20px,20px",
         "col_dk": "4",
         "col_tb": "2",
         "col_mb": "2",
-        "space_horizontal": "30",
+        "space_horizontal": "0",
         "space_vertical": "30",
-        "space_horizontal_mb": "30",
+        "space_horizontal_mb": "10",
         "space_vertical_mb": "30",
         "layout": "grid",
         "loop": false,
@@ -600,9 +606,9 @@
         "background_opacity": 1,
         "section_layout": "container",
         "hdt_background_parallax": false,
-        "mg": ",,50px,",
+        "mg": "",
         "mg_mb": ",,30px,",
-        "pd": "",
+        "pd": "48px,,48px,",
         "pd_mb": ""
       }
     },
@@ -668,6 +674,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -776,7 +783,8 @@
                 "heading": "فيرونا معك بكل المناسبات",
                 "line_height": "",
                 "heading_size": "h3",
-                "text_color": "hdt-s-text",
+                "text_color": "hdt-text-primary",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -787,11 +795,11 @@
               "type": "_sub_heading_section",
               "name": "t:blocks.section_heading.sub_heading",
               "settings": {
-                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة أو لتقديم هدية مميزة.</p>",
+                "text": "<p>نقدم لك تجربة فاخرة تجمع بين الجودة والذوق الرفيع، سواء للاحتفال بلحظاتك السعيدة&nbsp;<br/>أو لتقديم هدية مميزة.</p>",
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
-                "text_size": "base",
-                "text_color": "hdt-s-text",
+                "text_size": "custom",
+                "text_color": "hdt-text-secondary",
                 "font_size_text_lg": 16,
                 "font_size_text": 14,
                 "letter_spacing_text": 0
@@ -813,7 +821,9 @@
       "name": "t:sections.collections-list.name",
       "settings": {
         "collection_list": [],
-        "collection_des": "4",
+        "collection_des": "16",
+        "show_shop_link": true,
+        "shop_link_label": "اكتشف المزيد",
         "content_size": "lg",
         "content_weight": "semibold",
         "content_position": "center",
@@ -848,8 +858,8 @@
         "pag_space": 10,
         "pag_mgt": 10,
         "pag_hide_mobile": false,
-        "colors_by_section": false,
-        "color_scheme": "",
+        "colors_by_section": true,
+        "color_scheme": "scheme-dfc90434-21ec-4360-8074-117bdc58e24d",
         "background_opacity": 0,
         "section_layout": "container",
         "hdt_background_parallax": false,
@@ -868,7 +878,7 @@
             "heading": "",
             "content": "<p>الصراحة، خدمة فيرونا رهيبة! الشحن سريع ووصلت الهدية خلال ساعات، والورود كانت طازة والشوكولاتة لذيذة. تغليفهم محترف وراقي، أنصح الكل في فيرونا</p>",
             "title": "سارة العلي",
-            "pos": "",
+            "pos": "الكويت - العاصمة",
             "rating": 5
           },
           "blocks": {}
@@ -879,7 +889,7 @@
             "heading": "",
             "content": "<p>جربت فيرونا أكثر من مرة، وكل مرة تكون التجربة أفضل. الشحن سريع، التغليف مرتب وفاخر، والمنتجات جودتها عالية. يستاهلون 5 نجوم</p>",
             "title": "فهد المنيفي",
-            "pos": "",
+            "pos": "الكويت - الجهراء",
             "rating": 5
           },
           "blocks": {}
@@ -890,40 +900,40 @@
             "heading": "",
             "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
             "title": "مشعل المطيري",
-            "pos": "",
+            "pos": "الكويت - الفحيحيل",
             "rating": 5
           },
           "blocks": {}
         },
-        "testimonial_item_Nx4wDf": {
+        "testimonial_item_NhQ3Kw": {
           "type": "_testimonial_item",
           "settings": {
             "heading": "",
             "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
             "title": "مشعل المطيري",
-            "pos": "",
+            "pos": "الكويت - الفحيحيل",
             "rating": 5
           },
           "blocks": {}
         },
-        "testimonial_item_wjrVHD": {
+        "testimonial_item_Pk8fQe": {
           "type": "_testimonial_item",
           "settings": {
             "heading": "",
             "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
             "title": "مشعل المطيري",
-            "pos": "",
+            "pos": "الكويت - الفحيحيل",
             "rating": 5
           },
           "blocks": {}
         },
-        "testimonial_item_nWt84R": {
+        "testimonial_item_DFH8ge": {
           "type": "_testimonial_item",
           "settings": {
             "heading": "",
             "content": "<p>ما شاء الله عليهم، الخدمة سريعة والتغليف مرتب وجميل. الشوكولاتة لذيذة طازه، وكل شي كان تمام. أنصح فيها لأي مناسبة</p>",
             "title": "مشعل المطيري",
-            "pos": "",
+            "pos": "الكويت - الفحيحيل",
             "rating": 5
           },
           "blocks": {}
@@ -946,7 +956,8 @@
                 "heading": "★★★★★",
                 "line_height": "",
                 "heading_size": "h5",
-                "text_color": "hdt-s-text",
+                "text_color": "hdt-text-custom-color",
+                "text_custom_color": "#F5A623",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -961,6 +972,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-text-primary",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -974,7 +986,7 @@
                 "text": "<p>في فيرونا، نؤمن أن تجربتك معنا يجب أن تكون استثنائية من البداية للنهاية</p>",
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
-                "text_size": "base",
+                "text_size": "custom",
                 "text_color": "hdt-text-secondary",
                 "font_size_text_lg": 16,
                 "font_size_text": 14,
@@ -1006,9 +1018,9 @@
         "testimonial_item_pkTpmp",
         "testimonial_item_dWMq4a",
         "testimonial_item_Lakg3Q",
-        "testimonial_item_Nx4wDf",
-        "testimonial_item_wjrVHD",
-        "testimonial_item_nWt84R"
+        "testimonial_item_NhQ3Kw",
+        "testimonial_item_Pk8fQe",
+        "testimonial_item_DFH8ge"
       ],
       "name": "t:sections.testimonials_section.name",
       "settings": {
@@ -1019,8 +1031,8 @@
         "cl_bg_item": "#f4f0ea",
         "bdr": 10,
         "content_align": "left",
-        "col_dk": "3",
-        "col_tb": "2",
+        "col_dk": "5",
+        "col_tb": "3",
         "col_mb": "2",
         "space_horizontal": "8",
         "space_vertical": "30",
@@ -1260,6 +1272,7 @@
                 "line_height": "",
                 "heading_size": "h3",
                 "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
