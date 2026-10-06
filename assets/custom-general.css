@@ -108,3 +108,27 @@
 .ms-card-info-box hdt-price {
   font-weight: 700 !important;
 }
+h3 {
+  font-weight: 700 !important;
+}
+.ms-iconbox-design_1 .hdt-row-grid,
+.ms-iconbox-design_1 .hdt-slider__viewport {
+  border-radius: 10px;
+  overflow: hidden;
+  column-gap: 1px !important;
+  --column-gap: 1px !important;
+  --slide-spacing: 0 !important;
+  background: var(--border-color, #e5e5e5);
+}
+.hdt-iconbox-border__true.ms-iconbox-design_1 .hdt-row-grid,
+.hdt-iconbox-border__true.ms-iconbox-design_1 .hdt-slider__viewport {
+  border: 1px solid var(--border-color, #e5e5e5);
+}
+.ms-iconbox-design_1 .hdt-iconbox-item {
+  background: var(--color-box);
+}
+.ms-iconbox-design_1 .hdt-iconbox-item-wrapper {
+  border-radius: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}

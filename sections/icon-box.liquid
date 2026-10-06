@@ -34,7 +34,7 @@
     <div class="hdt-section-heading">
       {% content_for 'block', type: 'section-heading', id: 'icon-box' %}
     </div>
-    <div class="hdt-icon-box hdt-iconbox-border__{{ section.settings.enable_border }} hdt-iconbox-shadow__{{ section.settings.enable_box_shadow }}" style="--border-color:{{ section.settings.border_color }};--heading-color:{{ section.settings.heading_color }};--icon-color:{{ section.settings.icon_color }};--description-color:{{ section.settings.description_color }};--color-box:{{ section.settings.color_box }};--color-box-hover:{{ section.settings.color_box_hover }};--color-content-hover:{{ section.settings.color_content_hover }};--padding-content: {{ pd_content }};--spacing-horizontal:{{ section.settings.space_horizontal }}px;--spacing-vertical:{{ section.settings.space_vertical }}px;--spacing-horizontal-mb:{{ section.settings.space_horizontal_mb }}px;--spacing-vertical-mb:{{ section.settings.space_vertical_mb }}px;">
+    <div class="hdt-icon-box ms-iconbox-{{ section.settings.box_design }} hdt-iconbox-border__{{ section.settings.enable_border }} hdt-iconbox-shadow__{{ section.settings.enable_box_shadow }}" style="--border-color:{{ section.settings.border_color }};--heading-color:{{ section.settings.heading_color }};--icon-color:{{ section.settings.icon_color }};--description-color:{{ section.settings.description_color }};--color-box:{{ section.settings.color_box }};--color-box-hover:{{ section.settings.color_box_hover }};--color-content-hover:{{ section.settings.color_content_hover }};--padding-content: {{ pd_content }};--spacing-horizontal:{{ section.settings.space_horizontal }}px;--spacing-vertical:{{ section.settings.space_vertical }}px;--spacing-horizontal-mb:{{ section.settings.space_horizontal_mb }}px;--spacing-vertical-mb:{{ section.settings.space_vertical_mb }}px;">
       {% if section.settings.layout == 'grid' %}
         <div class="hdt-row-grid hdt-prent hdt-grid-cols-{{ section.settings.col_mb }} md:hdt-grid-cols-{{ section.settings.col_tb }} lg:hdt-grid-cols-{{ section.settings.col_dk }}">
       {% else %}
@@ -75,6 +75,22 @@
       "groups": ["header", "footer", "custom.system"]
     },
     "settings": [
+      {
+        "type": "select",
+        "id": "box_design",
+        "label": "Box design",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "design_1",
+            "label": "Design 1"
+          }
+        ],
+        "default": "default"
+      },
       {
         "type": "checkbox",
         "id": "enable_border",

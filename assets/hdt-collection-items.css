@@ -57,7 +57,9 @@
   container-type: inline-size;
 }
 .ms-collection-item {
-box-shadow: 0px 2px 14px 0px #00000012;
+  box-shadow: 0px 2px 14px 0px #00000012;
+  bottom: 22px;
+  right: 22px;
 }
 .hdt-collection-title {
   min-height: 24px;
@@ -127,7 +129,6 @@ box-shadow: 0px 2px 14px 0px #00000012;
 }
 :where(.hdt-collection-style2, .hdt-collection-style3) .hdt-collection-title {
   text-shadow: 0 0 4px rgb(0, 0, 0, 0.4);
-  
 }
 :where(
     .hdt-collection-style5,
@@ -161,7 +162,7 @@ box-shadow: 0px 2px 14px 0px #00000012;
   .hdt-collection-inner {
   border-radius: var(--radius-collection-card);
 }
-.ms-collection-inner{
+.ms-collection-inner {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
