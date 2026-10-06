@@ -187,3 +187,10 @@ h3 {
   position: relative;
   z-index: 2;
 }
+.hdt-quote-wrap.quote_01.ms-quote {
+  box-shadow: none;
+  min-height: 300px;
+}
+.hdt-quote-content.ms-paragraph p {
+  min-height: 115px;
+}

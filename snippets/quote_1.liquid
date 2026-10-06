@@ -1,9 +1,9 @@
-<div class="hdt-quote-wrap quote_01">
+<div class="hdt-quote-wrap quote_01 ms-quote">
   {%- if block.settings.image_avata -%}
     {%- assign image = block.settings.image_avata -%} 
       {{ image | image_url: width: image.width | image_tag: loading: 'lazy', width: image.width, height: image.height, widths: '200,400,600,800,1000', class: 'hdt-quote-avatar' }}
     {%- endif -%}
-  <div class="hdt-quote-content">
+  <div class="hdt-quote-content ms-paragraph">
      {%- render 'rating_star', rating: block.settings.rating -%}
      {% if block.settings.heading != blank %}
      <h3 class="hdt-testimonial-heading">{{ block.settings.heading }}</h3>

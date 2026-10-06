@@ -1,5 +1,10 @@
 <!-- blocks/_heading_section.liquid -->
 <h3 hdt-reveal="slide-in" timeline id="block-{{ block.id }}" class="hdt-text-warry hdt-heading-block {{ block.settings.text_color }} hdt-{{ block.settings.heading_size }} {{ block.settings.line_height }}" {{ block.shopify_attributes }}><span>{{ block.settings.heading }}</span></h3>
+{%- style -%}
+  {%- if block.settings.text_color == 'hdt-text-custom-color' and block.settings.text_custom_color != blank -%}
+    #block-{{ block.id }} { color: {{ block.settings.text_custom_color }}; }
+  {%- endif -%}
+{%- endstyle -%}
 {%- if block.settings.heading_size == "h_custom" -%}
   {%- style -%}
     #block-{{ block.id }} {
@@ -97,10 +102,21 @@
         {
           "value": "hdt-text-primary",
           "label": "t:settings_schema.colors.accent"
+        },
+        {
+          "value": "hdt-text-custom-color",
+          "label": "Custom"
         }
       ],
       "label": "t:blocks.text.text_color.label",
       "default": "hdt-s-text"
+    },
+    {
+      "type": "color",
+      "id": "text_custom_color",
+      "label": "Custom text color",
+      "default": "#000000",
+      "visible_if": "{{ block.settings.text_color == 'hdt-text-custom-color' }}"
     },
     {
       "type": "header",
