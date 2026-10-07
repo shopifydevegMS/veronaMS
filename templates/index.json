@@ -407,7 +407,7 @@
                 "text": "<p><a href=\"/collections/%D8%A7%D9%84%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7\" title=\"الأكثر مبيعا\">أكتشف المزيد ›</a></p>",
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
-                "text_size": "base",
+                "text_size": "custom",
                 "text_color": "hdt-text-primary",
                 "font_size_text_lg": 16,
                 "font_size_text": 14,
@@ -957,7 +957,7 @@
                 "line_height": "",
                 "heading_size": "h5",
                 "text_color": "hdt-text-custom-color",
-                "text_custom_color": "#F5A623",
+                "text_custom_color": "#f5a623",
                 "font_size_heading_lg": 50,
                 "font_size_heading": 24,
                 "letter_spacing_heading": 0
@@ -1085,7 +1085,7 @@
             "letter_spacing": 0,
             "enable_italic": false,
             "enable_text_shadow": false,
-            "margin_bottom": 0,
+            "margin_bottom": 16,
             "hide_on_mobile": false,
             "font_size_mobile": 14,
             "line_height_mobile": 0,
@@ -1109,7 +1109,7 @@
             "letter_spacing": 0,
             "enable_italic": false,
             "enable_text_shadow": false,
-            "margin_bottom": 0,
+            "margin_bottom": 16,
             "hide_on_mobile": false,
             "font_size_mobile": 14,
             "line_height_mobile": 0,
@@ -1118,19 +1118,177 @@
           },
           "blocks": {}
         },
+        "group_icon_box_2_rHFV4R": {
+          "type": "_group-icon-box-2",
+          "name": "Group box 2",
+          "settings": {
+            "select-design-group-block-id": "design1",
+            "width_lg": 100,
+            "width_md": 100,
+            "width": 100,
+            "space_lg": 30,
+            "space_md": 15,
+            "space": 15
+          },
+          "blocks": {
+            "icon_heading_bKHYRj": {
+              "type": "_icon-heading",
+              "name": "Icon Heading",
+              "settings": {
+                "select-design-icon-header-id": "design1"
+              },
+              "blocks": {
+                "icon_XFfDqb": {
+                  "type": "icon",
+                  "settings": {
+                    "select-design-icon-block-id": "design1",
+                    "icon": "car",
+                    "svg_upload": "",
+                    "image_upload": "shopify://shop_images/dcac4b60be8d851a3240b91542beef5c0f15fe61.png",
+                    "width_lg": 80,
+                    "width_md": 44,
+                    "width": 44
+                  },
+                  "blocks": {}
+                },
+                "heading_fzj4hD": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "<p>جودة عالية</p>",
+                    "hidden_br_mobile": false,
+                    "hidden_on_mobile": false,
+                    "line_height": "",
+                    "font_weight": "semibold",
+                    "heading_size": "h_custom",
+                    "text_color": "hdt-text-secondary",
+                    "font_size_heading_lg": 18,
+                    "font_size_heading": 24,
+                    "letter_spacing_heading": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_XFfDqb",
+                "heading_fzj4hD"
+              ]
+            },
+            "icon_heading_txMhdF": {
+              "type": "_icon-heading",
+              "name": "Icon Heading",
+              "settings": {
+                "select-design-icon-header-id": "design1"
+              },
+              "blocks": {
+                "icon_Y7Ytjc": {
+                  "type": "icon",
+                  "settings": {
+                    "select-design-icon-block-id": "design1",
+                    "icon": "car",
+                    "svg_upload": "",
+                    "image_upload": "shopify://shop_images/0e79d576441c9a2639f853607ffaa21251298ebb.png",
+                    "width_lg": 80,
+                    "width_md": 44,
+                    "width": 44
+                  },
+                  "blocks": {}
+                },
+                "heading_cNALtJ": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "<p>توصيل سريع</p>",
+                    "hidden_br_mobile": false,
+                    "hidden_on_mobile": false,
+                    "line_height": "",
+                    "font_weight": "semibold",
+                    "heading_size": "h_custom",
+                    "text_color": "hdt-text-secondary",
+                    "font_size_heading_lg": 18,
+                    "font_size_heading": 24,
+                    "letter_spacing_heading": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_Y7Ytjc",
+                "heading_cNALtJ"
+              ]
+            },
+            "icon_heading_xnr9TR": {
+              "type": "_icon-heading",
+              "name": "Icon Heading",
+              "settings": {
+                "select-design-icon-header-id": "design1"
+              },
+              "blocks": {
+                "icon_PPMydF": {
+                  "type": "icon",
+                  "settings": {
+                    "select-design-icon-block-id": "design1",
+                    "icon": "car",
+                    "svg_upload": "",
+                    "image_upload": "shopify://shop_images/f8311430c05567c3badec9aba6330b478e9162e0.png",
+                    "width_lg": 80,
+                    "width_md": 44,
+                    "width": 44
+                  },
+                  "blocks": {}
+                },
+                "heading_WWYtqV": {
+                  "type": "heading",
+                  "settings": {
+                    "heading": "<p>تغليف فاخر</p>",
+                    "hidden_br_mobile": false,
+                    "hidden_on_mobile": false,
+                    "line_height": "",
+                    "font_weight": "semibold",
+                    "heading_size": "h_custom",
+                    "text_color": "hdt-text-secondary",
+                    "font_size_heading_lg": 18,
+                    "font_size_heading": 24,
+                    "letter_spacing_heading": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_PPMydF",
+                "heading_WWYtqV"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_heading_bKHYRj",
+            "icon_heading_txMhdF",
+            "icon_heading_xnr9TR"
+          ]
+        },
+        "spacer_egFUA3": {
+          "type": "spacer",
+          "name": "t:blocks.spacer.name",
+          "settings": {
+            "direction": false,
+            "space_lg": 16,
+            "space_md": 16,
+            "space": 16
+          },
+          "blocks": {}
+        },
         "button_Gt6CJW": {
           "type": "button",
           "name": "t:blocks.button.name",
           "settings": {
             "label": "يمكنك التواصل معنا دائما من خلال واتساب : 96590900635",
-            "link": "",
+            "link": "https://wa.me/96590900635",
             "open_in_new_tab": false,
             "full_width": false,
-            "btn_style": "hdt-btn-secondary",
-            "color_btn": "#fff",
-            "color_hover_btn": "#fff",
-            "background_btn": "#222",
-            "background_hover_btn": "#333",
+            "btn_style": "hdt-btn-custom",
+            "color_btn": "#1a2a3a",
+            "color_hover_btn": "rgba(0,0,0,0)",
+            "background_btn": "#ffffff",
+            "background_hover_btn": "#eeeeee",
+            "button-opacity-id": 100,
             "border_w_btn": "",
             "border_btn": "#222",
             "border_hover_btn": "#333",
@@ -1143,9 +1301,9 @@
             "min_width_dt_btn": 100,
             "min_height_btn": 48,
             "rounded": "hdt-btn-radius-lg",
-            "icon": "none",
+            "icon": "whatsapp-icon",
             "icon_position": "before",
-            "icon_height": 14,
+            "icon_height": 24,
             "icon_spacing": 5
           },
           "blocks": {}
@@ -1154,6 +1312,8 @@
       "block_order": [
         "text_custom_myNJMq",
         "text_custom_nRCBJj",
+        "group_icon_box_2_rHFV4R",
+        "spacer_egFUA3",
         "button_Gt6CJW"
       ],
       "name": "Banner parallax",
@@ -1193,12 +1353,12 @@
         "padding_horizontal": 30,
         "min_width_content": 350,
         "border_pd": 0,
-        "colors_by_section": false,
-        "color_scheme": "",
+        "colors_by_section": true,
+        "color_scheme": "scheme-1",
         "background_opacity": 0,
         "section_layout": "full_width",
         "hdt_background_parallax": false,
-        "mg": ",,50px,",
+        "mg": "",
         "mg_mb": ",,30px,",
         "pd": "",
         "pd_mb": ""
@@ -1210,6 +1370,7 @@
         "product_video_dXTrcP": {
           "type": "_product-video",
           "settings": {
+            "ms-hide-content-id": true,
             "video": "shopify://files/videos/c524a7ed5fbc410e8a175a1d9fe0bf70.HD-720p-1.6Mbps-68701371.mp4",
             "external_video_url": "",
             "product": ""
@@ -1219,6 +1380,7 @@
         "product_video_AwPzL9": {
           "type": "_product-video",
           "settings": {
+            "ms-hide-content-id": true,
             "video": "shopify://files/videos/7b439082930e43e58d2fbf6e973b1459.HD-720p-1.6Mbps-77414298.mp4",
             "external_video_url": "",
             "product": ""
@@ -1228,6 +1390,7 @@
         "product_video_YqjCzf": {
           "type": "_product-video",
           "settings": {
+            "ms-hide-content-id": true,
             "video": "shopify://files/videos/6a62f41bd599465aaeba74efe94e1fb1.HD-1080p-2.5Mbps-82852977.mp4",
             "external_video_url": "",
             "product": ""
@@ -1237,6 +1400,7 @@
         "product_video_xzKeBi": {
           "type": "_product-video",
           "settings": {
+            "ms-hide-content-id": true,
             "video": "shopify://files/videos/4a05a193dc864e7c86689b4b39bfd9ec.HD-1080p-2.5Mbps-77078115.mp4",
             "external_video_url": "",
             "product": ""
@@ -1247,6 +1411,7 @@
           "type": "_product-video",
           "name": "Item",
           "settings": {
+            "ms-hide-content-id": true,
             "video": "shopify://files/videos/dddb058be297481cad4edfaf38160b6f.HD-1080p-2.5Mbps-77078113.mp4",
             "external_video_url": "",
             "product": ""
@@ -1309,7 +1474,7 @@
         "autoplay": 0,
         "pauseOnHover": false,
         "navUI": true,
-        "nav_position": "out_side",
+        "nav_position": "totally_outside",
         "nav_visible": "always",
         "nav_style": "default",
         "nav_shape": "rounded",
@@ -1324,7 +1489,7 @@
         "pag_hide_mobile": false,
         "mg": "",
         "mg_mb": ",,30px,",
-        "pd": "48px,,48px,",
+        "pd": "48px,80px,48px,80px",
         "pd_mb": ""
       }
     }
