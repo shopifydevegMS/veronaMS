@@ -16,6 +16,58 @@
   }
   }
   {% render 'spacing-vars', box: section %}
+  
+  #shopify-section-{{ section.id }} #Slider-{{ section.id }} {
+    overflow: visible;
+  }
+  #shopify-section-{{ section.id }} #Slider-{{ section.id }} .hdt-slider__viewport {
+    overflow: hidden;
+  }
+  #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside {
+    --ms-nav-gap: 16px;
+    /* slider edge -> container outer edge = 1.5rem (.hdt-container padding), plus 16px gap, plus button size */
+    --ms-nav-offset: calc(var(--nav-size) + var(--ms-nav-gap) + 1.5rem);
+    --nav-width-visible: calc(100% + var(--ms-nav-offset) * 2);
+    --nav-width-visible-hv: calc(100% + var(--ms-nav-offset) * 2);
+    width: calc(100% + var(--ms-nav-offset) * 2) !important;
+    left: calc(var(--ms-nav-offset) * -1 * var(--value-logical-flip, 1)) !important;
+    right: auto !important;
+    z-index: 2;
+  }
+  .dir--rtl #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside {
+    left: auto !important;
+    right: calc(var(--ms-nav-offset) * -1) !important;
+  }
+  #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside.hdt-visible-hover {
+    width: calc(100% + var(--ms-nav-offset) * 2);
+    opacity: 0;
+  }
+  #shopify-section-{{ section.id }} .hdt-slider:hover .ms-navigation.ms-position-totally-outside.hdt-visible-hover {
+    opacity: 1;
+    width: calc(100% + var(--ms-nav-offset) * 2);
+  }
+  #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+  }
+  .dir--rtl #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+    left: 16px;
+    right: 16px;
+  }
+  @media (max-width: 1400px) {
+    #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside,
+    #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+      width: 100% !important;
+      left: 0 !important;
+      right: 0 !important;
+    }
+    .dir--rtl #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside,
+    .dir--rtl #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+      left: auto !important;
+      right: 0 !important;
+    }
+  }
 {% endstyle %}
 <div
   id="{{ section.id }}"
@@ -50,7 +102,7 @@
         </div>
       </div>
       {%- if section.settings.navUI and section.settings.nav_position != 'heading' -%}
-        <div class="hdt-navigation hdt-position-{{ section.settings.nav_position }} hdt-visible-{{ section.settings.nav_visible }} hdt-style-{{ section.settings.nav_style }} hdt-shape-{{ section.settings.nav_shape }} hdt-size-{{ section.settings.nav_size }} hdt-hide-mobile-{{ section.settings.nav_hide_mobile }}">
+        <div class="hdt-navigation ms-navigation{% if section.settings.nav_position == 'totally_outside' %} ms-position-totally-outside{% endif %} hdt-position-{{ section.settings.nav_position }} hdt-visible-{{ section.settings.nav_visible }} hdt-style-{{ section.settings.nav_style }} hdt-shape-{{ section.settings.nav_shape }} hdt-size-{{ section.settings.nav_size }} hdt-hide-mobile-{{ section.settings.nav_hide_mobile }}">
           <button aria-controls="Slider-{{ section.id }}" class="hdt-slider__button hdt-slider__button--prev" type="button" disabled name="previous" aria-label="previous">
             <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none"><path d="M5.5 11L0 5.5L5.5 0L6.47625 0.97625L1.9525 5.5L6.47625 10.0238L5.5 11Z" fill="currentColor"/></svg>
           </button>
@@ -302,6 +354,10 @@
         {
           "value": "out_side",
           "label": "t:blocks.carousel.settings.navigation.position.options.out_side"
+        },
+        {
+          "value": "totally_outside",
+          "label": "Totally outside"
         },
         {
           "value": "heading",

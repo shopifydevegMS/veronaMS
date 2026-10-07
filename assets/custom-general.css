@@ -194,3 +194,6 @@ h3 {
 .hdt-quote-content.ms-paragraph p {
   min-height: 115px;
 }
+.hdt-content.ms-hide-content{
+  display: none;
+}
