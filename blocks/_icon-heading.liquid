@@ -1,6 +1,6 @@
 {%- comment %} Check sizes image when Shopify update API {%- endcomment %}
 <div class="hdt_icon_heading">
-  <div class="hdt_icon__header">
+  <div class="hdt_icon__header {%  if block.settings.select-design-icon-header-id == "design1" %} ms-icon-header {% endif %} ">
     {% content_for 'blocks' %}
   </div>
 </div>
@@ -19,6 +19,9 @@
     justify-content: center;
     gap: 10px;
   }
+   .hdt_icon_heading > .hdt_icon__header.ms-icon-header{
+     flex-direction: column;
+   }
 
   .hdt_icon__header > .hdt-heading-block.hdt-s-text {
     line-height: normal;
@@ -30,12 +33,39 @@
     color: rgb(var(--color-accent));
     margin-inline-end: 30px;
   }
+  .hdt_icon__header > .hdt-icon-block.hdt-s-text.ms-icon-block{
+    width: 134px;
+    margin: auto;
+    background-color: white;
+    height: 134px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
 
 {% schema %}
 {
   "name": "t:blocks.icon_heading.name",
   "tag": null,
+  "settings": [
+     {
+      "type": "select",
+      "id": "select-design-icon-header-id",
+      "label": "design",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "design1",
+          "label": "design1"
+        }
+      ]
+    },
+  ],
   "blocks": [
     {
       "type": "icon"

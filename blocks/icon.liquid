@@ -1,5 +1,5 @@
 {%- comment %} Check sizes image when Shopify update API {%- endcomment %}
-<div id="block-{{ block.id }}" class="hdt-icon-block hdt-s-text" style=" --width: {{ block.settings.width }}px; --width-md: {{ block.settings.width_md }}px; --width-lg: {{ block.settings.width_lg }}px;" {{ block.shopify_attributes }}>
+<div id="block-{{ block.id }}" class="hdt-icon-block hdt-s-text {%  if block.settings.select-design-icon-block-id == "design1" %} ms-icon-block {% endif %}" style=" --width: {{ block.settings.width }}px; --width-md: {{ block.settings.width_md }}px; --width-lg: {{ block.settings.width_lg }}px;" {{ block.shopify_attributes }}>
   {%- liquid
     if block.settings.svg_upload != blank
       echo block.settings.svg_upload
@@ -15,6 +15,22 @@
   "name": "t:blocks.icon.name",
   "tag": null,
   "settings": [
+    {
+      "type": "select",
+      "id": "select-design-icon-block-id",
+      "label": "design",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "design1",
+          "label": "design1"
+        }
+      ]
+    },
     {
       "type": "select",
       "id": "icon",
@@ -195,6 +211,10 @@
         {
           "value": "back2",
           "label": "t:blocks.icon.options.back2"
+        },
+        {
+          "value": "whatsapp-icon",
+          "label": "whatsapp"
         }
       ],
       "default": "car"

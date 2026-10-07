@@ -77,6 +77,12 @@
   #Scroll-{{ block.id }}:hover .hdt-text-block.hdt-rte.hdt-s-text2 > * {
     color: rgb(var(--color-background));
   }
+  #Scroll-{{ block.id }}.ms-group-block{
+    justify-content: center;
+    gap: 32px;
+    border: none;
+    box-shadow: none;
+  }
 {% endstyle %}
 {%- capture visible -%}
 {%- if block.settings.width == 0 %} hdt-hidden{% endif -%}
@@ -85,7 +91,7 @@
 {%- endcapture -%}
 <div
   id="Scroll-{{ block.id }}"
-  class="hdt-group-block hdt-group-block--{{ block.id }} hdt-group-layout hdt-snap-center {{ visible }}"
+  class="hdt-group-block hdt-group-block--{{ block.id }} hdt-group-layout hdt-snap-center {{ visible }}{%  if block.settings.select-design-group-block-id == "design1" %} ms-group-block {% endif %} "
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}
@@ -104,6 +110,22 @@
     }
   ],
   "settings": [
+     {
+      "type": "select",
+      "id": "select-design-group-block-id",
+      "label": "design",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "design1",
+          "label": "design1"
+        }
+      ]
+    },
     {
       "type": "range",
       "id": "width_lg",

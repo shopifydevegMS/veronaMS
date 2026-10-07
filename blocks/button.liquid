@@ -22,7 +22,7 @@
 {%- capture class -%}
   hdt-button-block hdt-btn hdt-relative hdt-oh hdt-font-{{ block.settings.font_weight }} hdt-btn--size-{{ block.settings.size }} {{ block.settings.text_size }} {{ block.settings.btn_style }}{% if block.settings.boder_hover %} hdt-btn-boder-hover{% endif %}{% if block.settings.full_width %} hdt-btn-full-width{% endif %} {{ block.settings.rounded }}{% if block.settings.icon != "none" %} hdt-btn--with-icon hdt-btn--pos-icon-{{ block.settings.icon_position }}{% endif %}
 {%- endcapture -%}
-<a {{ effect }} id="block-{{ block.id }}" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %} class="{{ class }}" style="{{ style }}" {% if block.settings.open_in_new_tab %} target="_blank" rel="noopener noreferrer"{% endif -%} {{ block.shopify_attributes }}>  
+<a {{ effect }} id="block-{{ block.id }}" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %} class="{{ class }}" style="{{ style }} {%  if block.settings.button-opacity-id %} opacity:{{ block.settings.button-opacity-id }}% ; {% endif %} " {% if block.settings.open_in_new_tab %} target="_blank" rel="noopener noreferrer"{% endif -%} {{ block.shopify_attributes }}>  
   {%- liquid
     if block.settings.icon != 'none'
       render 'icons', icon: block.settings.icon
@@ -198,6 +198,16 @@
       "label": "Background hover button",
       "default": "#333",
       "visible_if": "{{ block.settings.btn_style == 'hdt-btn-custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "button-opacity-id",
+      "label": "button opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100
     },
     {
       "type": "text",
@@ -601,6 +611,9 @@
         {
           "value": "back2",
           "label": "t:blocks.icon.options.back2"
+        },{
+          "value": "whatsapp-icon",
+          "label": "whatsapp"
         }
       ],
       "default": "none"
