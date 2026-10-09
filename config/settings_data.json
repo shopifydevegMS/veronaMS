@@ -220,8 +220,8 @@
       },
       "scheme-7f11e9e7-1fd0-494b-bb1b-1f0423758b89": {
         "settings": {
-          "text": "#C6A490",
-          "text2": "#C6A490",
+          "text": "#c6a490",
+          "text2": "#c6a490",
           "background": "#1a2a3a",
           "background_gradient": "",
           "background2": "#f2f2f2",
@@ -248,6 +248,27 @@
           "background2": "#f2f2f2",
           "button": "#1a2a3a",
           "button_label": "#d0b4a6",
+          "button_border": "",
+          "secondary_button_label": "#d0b4a6",
+          "accent_color": "#1a2a3a",
+          "line_border": "#dddddd",
+          "overlay": "#000000",
+          "pr_text": "#1a2a3a",
+          "price": "#aaaaaa",
+          "sale_price": "#1a2a3a",
+          "input_primary": "#ffffff",
+          "input_secondary": "#878787"
+        }
+      },
+      "scheme-af075ce7-6183-42ae-b662-3b2c36f742bf": {
+        "settings": {
+          "text": "#EBD7B4",
+          "text2": "#D2B994",
+          "background": "#1B2D42",
+          "background_gradient": "",
+          "background2": "#f2f2f2",
+          "button": "#1a2a3a",
+          "button_label": "#c6a490",
           "button_border": "",
           "secondary_button_label": "#d0b4a6",
           "accent_color": "#1a2a3a",
