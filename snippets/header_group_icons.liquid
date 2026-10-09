@@ -138,7 +138,7 @@
 	</div>
   {%- endif -%}
 	{%- if section.settings.enabled_user -%}
-		<div class="hdt-site-nav_icon hdt-site-nav_user lg:hdt-inline-flex md:hdt-inline-flex hdt-align-center hdt-hidden">
+		<div class="hdt-site-nav_icon hdt-site-nav_user lg:hdt-inline-flex md:hdt-inline-flex hdt-align-center {%  if section.settings.account-hide-mobile-id %} hdt-hidden {% endif %}  {%  unless section.settings.account-hide-mobile-id %} hdt-inline-flex {% endunless %}">
 			<a class="hdt-inline-flex hdt-align-center hdt-relative" data-no-instant href="{{ routes.account_url }}"{% unless customer or request.page_type contains 'customers' or settings.login_sidebar == false %} aria-controls="login-form-sidebar"{% endunless %}>
         <svg width="24" height="24" aria-hidden="true" focusable="false" role="presentation"><use href="#icon-h-account"></use></svg>
 			</a>

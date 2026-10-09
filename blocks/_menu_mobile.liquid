@@ -1,3 +1,8 @@
+{% style  %} 
+ul.hdt-mb-sub-menu.ms-sub-menu{
+  background-color: {{ block.settings.background-color-sub-menu-id }} ;
+}
+{% endstyle %}
 <hdt-drawer class="hdt-drawer hdt-drawer-menu-mb hdt-header-menu-mobile hdt-contents" color-scheme="{{ block.settings.header_mobile_colors }}">
   <dialog id="menu_mobile" class="hdt-dialog hdt-dialog-drawer" scroll-lock pos="{% if section.settings.menu_position != "end" %}left{% else %}right{% endif %}">
     <div class="hdt-dialog-drawer__header">
@@ -64,7 +69,7 @@
 																<span class="hdt-btn-open-sub hdt-relative" accordion-icon></span>
 															{%- endif -%}
 														</summary>
-														<ul class="hdt-mb-sub-menu hdt-menu-list hdt-mb-sub-menu-lever-1" role="list"  >
+														<ul class="hdt-mb-sub-menu hdt-menu-list hdt-mb-sub-menu-lever-1 {% if block.settings.background-color-sub-menu-id != blank %} ms-sub-menu {% endif %} " role="list"  >
 															{%- for childlink in link.links -%}
 																<li class="hdt-menu-item hdt-flex hdt-justify-center hdt-flex-col {% if childlink.links != blank %} hdt-has-children hdt-relative {% endif %}">
 																	{%- if childlink.links != blank -%}			     
@@ -160,7 +165,7 @@
 					{%- else -%}
 						<p class="hdt-menu-note">{{ 'sections.header.menu_empty' | t }}</p>
 					{%- endif -%}
-					<div class="hdt-mobile-other-content">
+					<div class="hdt-mobile-other-content {% if block.settings.hide-mobile-other-content-id %} hdt-hidden {% endif %}">
 						<div class="hdt-mobile_group_icons hdt-flex hdt-flex-col">
 							{%- if section.settings.enabled_wishlist -%}
 								<div class="hdt-site-nav_item hdt-site-nav_user hdt-inline-flex hdt-align-center">
@@ -325,6 +330,18 @@
   "name": "Mobile",
   "tag": null,
   "settings": [
+		{
+			"type": "checkbox",
+			"id": "hide-mobile-other-content-id",
+			"label": "hide mobile other content",
+			"default": false,
+			"info": "hide wishlist, search, account"
+		},
+		{
+			"type": "color",
+			"id": "background-color-sub-menu-id",
+			"label": "background color sub menu"
+		},
     {
       "type": "link_list",
       "id": "main_menu_mobile",
