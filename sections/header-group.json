@@ -74,6 +74,7 @@
           "settings": {
             "hide-mobile-other-content-id": true,
             "background-color-sub-menu-id": "#172638",
+            "text-color-sub-menu-id": "#D2B994",
             "main_menu_mobile": "",
             "menu_categories": "",
             "only_click_icon": false,
