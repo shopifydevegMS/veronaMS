@@ -25,7 +25,6 @@
   }
   #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside {
     --ms-nav-gap: 16px;
-    /* slider edge -> container outer edge = 1.5rem (.hdt-container padding), plus 16px gap, plus button size */
     --ms-nav-offset: calc(var(--nav-size) + var(--ms-nav-gap) + 1.5rem);
     --nav-width-visible: calc(100% + var(--ms-nav-offset) * 2);
     --nav-width-visible-hv: calc(100% + var(--ms-nav-offset) * 2);
@@ -68,10 +67,30 @@
       right: 0 !important;
     }
   }
+  @media (max-width: 1400px) {
+    #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside,
+    #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+      width: calc(100vw - var(--scrollbar-w, 0px)) !important;
+      max-width: calc(100vw - var(--scrollbar-w, 0px)) !important;
+      left: 50% !important;
+      right: auto !important;
+      margin-left: calc((100vw - var(--scrollbar-w, 0px)) / -2) !important;
+      margin-right: 0 !important;
+      padding-inline: 8px;
+      z-index: 2;
+    }
+    .dir--rtl #shopify-section-{{ section.id }} .ms-navigation.ms-position-totally-outside,
+    .dir--rtl #shopify-section-{{ section.id }} .hdt-container-full .ms-navigation.ms-position-totally-outside {
+      left: 50% !important;
+      right: auto !important;
+      margin-left: calc((100vw - var(--scrollbar-w, 0px)) / -2) !important;
+      margin-right: 0 !important;
+    }
+  }
 {% endstyle %}
 <div
   id="{{ section.id }}"
-  class="hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient{%- if section.settings.image_height == 'full' -%} hdt-fullscreen-desktop{%- endif %} hdt-style-{{ section.settings.style }}"
+  class="hdt-s-inner hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-s-gradient ms-overflow-hidden{%- if section.settings.image_height == 'full' -%} hdt-fullscreen-desktop{%- endif %} hdt-style-{{ section.settings.style }}"
   color-scheme="{{ section.settings.color_scheme }}"
 >
   <div class="hdt-container{%- if section.settings.full_width -%}-full{%- endif -%}" id="Video-{{ section.id }}">

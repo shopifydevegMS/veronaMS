@@ -111,6 +111,13 @@
     </ul>
   {%- endunless -%}
 </div>
+{% style %}
+  @media (max-width: 767px) {
+    #block-{{ block.id }} .hdt-socials__list {
+      --space-item: {{ block.settings.space_item_mb | default: 10 | divided_by: 10.0 }}rem !important;
+    }
+  }
+{% endstyle %}
 {% schema %}
 {
   "name": "t:settings_schema.social-media.name",
@@ -267,6 +274,16 @@
       "type":"range",
       "id":"space_item",
       "label":"t:blocks.social-media.settings.space_item.label",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type":"range",
+      "id":"space_item_mb",
+      "label":"Space item (Mobile)",
       "min": 0,
       "max": 100,
       "step": 1,
