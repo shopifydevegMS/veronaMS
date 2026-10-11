@@ -34,11 +34,11 @@
             "background_opacity": 0,
             "width_lg": 41,
             "width_md": 40,
-            "width": 100,
+            "width": 22,
             "mg": ",,50px,",
-            "mg_mb": ",,30px,",
+            "mg_mb": "0,0,0,0",
             "pd": ",130px,,",
-            "pd_mb": ""
+            "pd_mb": "0,5,,5"
           },
           "blocks": {
             "footer_image_d8wFnT": {
@@ -47,8 +47,8 @@
                 "img": "shopify://shop_images/4ff13ba6a89bc07c2c2bc7b74a5340e3955e2697_2a236bf2-b28d-4e82-b858-1efe9b07f3c0.png",
                 "custom_width": "custom",
                 "image_w": 96,
-                "image_w_tb": 96,
-                "image_w_mb": 96
+                "image_w_tb": 50,
+                "image_w_mb": 50
               },
               "blocks": {}
             },
@@ -58,8 +58,8 @@
               "settings": {
                 "direction": false,
                 "space_lg": 16,
-                "space_md": 50,
-                "space": 50
+                "space_md": 8,
+                "space": 8
               },
               "blocks": {}
             },
@@ -72,7 +72,7 @@
                 "html_tag": "p",
                 "font_family": "",
                 "color_text": "#d0b4a6",
-                "font_size": 13,
+                "font_size": 12,
                 "line_height": 24,
                 "font_weight": 400,
                 "letter_spacing": 0,
@@ -80,7 +80,7 @@
                 "enable_text_shadow": false,
                 "margin_bottom": 0,
                 "hide_on_mobile": false,
-                "font_size_mobile": 14,
+                "font_size_mobile": 9,
                 "line_height_mobile": 0,
                 "letter_spacing_mobile": 0,
                 "margin_bottom_mobile": 0
@@ -92,8 +92,8 @@
               "settings": {
                 "direction": false,
                 "space_lg": 26,
-                "space_md": 20,
-                "space": 20
+                "space_md": 8,
+                "space": 8
               },
               "blocks": {}
             },
@@ -112,7 +112,7 @@
                 "socials_style": "outline",
                 "socials_size": "medium",
                 "bd_radius": 30,
-                "space_item": 12
+                "space_item": 10
               },
               "blocks": {}
             }
@@ -145,11 +145,11 @@
             "background_opacity": 0,
             "width_lg": 20,
             "width_md": 50,
-            "width": 100,
+            "width": 20,
             "mg": ",,50px,",
             "mg_mb": ",,30px,",
-            "pd": "",
-            "pd_mb": ""
+            "pd": ",,,",
+            "pd_mb": "0,5,,5"
           },
           "blocks": {
             "linklist_mTLiQc": {
@@ -191,11 +191,11 @@
             "background_opacity": 0,
             "width_lg": 20,
             "width_md": 50,
-            "width": 100,
+            "width": 20,
             "mg": ",,50px,",
             "mg_mb": ",,30px,",
-            "pd": "",
-            "pd_mb": ""
+            "pd": ",,,",
+            "pd_mb": "0,5,,5"
           },
           "blocks": {
             "linklist_BDr677": {
@@ -237,11 +237,11 @@
             "background_opacity": 0,
             "width_lg": 18,
             "width_md": 50,
-            "width": 100,
+            "width": 20,
             "mg": ",,50px,",
             "mg_mb": ",,30px,",
-            "pd": "",
-            "pd_mb": ""
+            "pd": ",,,",
+            "pd_mb": "0,5,,5"
           },
           "blocks": {
             "liquid_rzxcc6": {
@@ -281,7 +281,7 @@
         "mg": "",
         "mg_mb": "",
         "pd": "48px,200px,0,200px",
-        "pd_mb": "56px,,56px,",
+        "pd_mb": "24px,16px,8px,16px",
         "colors_by_section": true,
         "color_scheme": "scheme-7f11e9e7-1fd0-494b-bb1b-1f0423758b89",
         "background_opacity": 1
@@ -313,9 +313,9 @@
             "hide_on_desktop": false,
             "hide_on_mobile": false,
             "only_mobile": false,
-            "sec_heading_size": "h4",
+            "sec_heading_size": "xs",
             "font_size_text_lg": 16,
-            "font_size_text": 14,
+            "font_size_text": 10,
             "font_weight_text": "normal",
             "letter_spacing_text": 0,
             "space": 30,
@@ -326,11 +326,11 @@
             "background_opacity": 0,
             "width_lg": 50,
             "width_md": 50,
-            "width": 100,
+            "width": 50,
             "mg": "",
             "mg_mb": "",
-            "pd": "",
-            "pd_mb": ""
+            "pd": ",,,",
+            "pd_mb": "0,0,0,0"
           },
           "blocks": {
             "custom_liquid_7gTHbP": {
@@ -342,11 +342,11 @@
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
                 "ffamily": "",
-                "text_size": "base",
+                "text_size": "custom",
                 "font_weight": "normal",
                 "text_color": "hdt-text-secondary",
                 "font_size_text_lg": 16,
-                "font_size_text": 14,
+                "font_size_text": 5,
                 "letter_spacing_text": 0
               },
               "blocks": {}
@@ -376,11 +376,11 @@
             "background_opacity": 0,
             "width_lg": 50,
             "width_md": 50,
-            "width": 100,
+            "width": 50,
             "mg": "",
             "mg_mb": "",
             "pd": "15px,43px,,48px",
-            "pd_mb": ""
+            "pd_mb": "0,0,0,0"
           },
           "blocks": {
             "text_pbzR4X": {
@@ -391,14 +391,14 @@
                 "hidden_br_mobile": false,
                 "hidden_on_mobile": false,
                 "ffamily": "",
-                "text_size": "base",
+                "text_size": "custom",
                 "line_height": "",
                 "font_weight": "normal",
                 "text_color": "hdt-text-secondary",
                 "countdown": "2025-12-30 15:00:00",
                 "txt_day": "days",
                 "font_size_text_lg": 16,
-                "font_size_text": 14,
+                "font_size_text": 5,
                 "letter_spacing_text": 0
               },
               "blocks": {}
@@ -417,8 +417,8 @@
         "@media (max-width: 768px) {.hdt-row {text-align: center; }}"
       ],
       "settings": {
-        "collapse": true,
-        "full_width": true,
+        "collapse": false,
+        "full_width": false,
         "mg": "",
         "mg_mb": "",
         "pd": "15px,,43px,48px",

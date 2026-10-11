@@ -296,7 +296,7 @@
         "image_rounded": false,
         "enable_border": false,
         "image_padding": 30,
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "image_size": true,
         "img_effect": "zoom",
         "b_effect": "none",
@@ -424,6 +424,127 @@
       },
       "block_order": [
         "product_grid_JJ7DRU"
+      ],
+      "disabled": true,
+      "settings": {
+        "colors_by_section": true,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "background_opacity": 0.3,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "48px,,48px,",
+        "pd_mb": ",,67px,"
+      }
+    },
+    "featured_collection_x4FpCF": {
+      "type": "featured-collection",
+      "blocks": {
+        "product_carousel_eRJTQh": {
+          "type": "_product-carousel",
+          "name": "t:blocks.product_carousel.name",
+          "settings": {
+            "collection": "الأكثر-مبيعا",
+            "products_count": 8,
+            "product_list": [],
+            "pr_border": "none",
+            "product_des": "6",
+            "image_ratio": "adapt_image",
+            "image_size": true,
+            "show_vendor": false,
+            "enable_one_line_title": true,
+            "hide_sale_badge": true,
+            "hide_new_badge": true,
+            "hide_bestseller_badge": false,
+            "enable_badges_right": true,
+            "hdt_slide_center": true,
+            "hdt_opacity_out_container": false,
+            "col_dk": "6",
+            "col_tb": "4",
+            "col_mb": "2",
+            "space_items": "x",
+            "pagination": false,
+            "paginate_pos": "center",
+            "dis_pagination": 30,
+            "btn_label": "",
+            "btn_style": "",
+            "icon": "none",
+            "size": "m",
+            "btn_fw": "medium",
+            "font_size_btn": 14,
+            "padding_btn": 30,
+            "min_width_btn": 100,
+            "min_width_dt_btn": 100,
+            "min_height_btn": 40,
+            "loop": false,
+            "autoplay": 0,
+            "pauseOnHover": false,
+            "navUI": false,
+            "nav_position": "default",
+            "nav_visible": "always",
+            "nav_style": "default",
+            "nav_shape": "default",
+            "nav_size": "small",
+            "nav_hide_mobile": false,
+            "dotUI": false,
+            "pag_style": "default",
+            "pag_rounded": true,
+            "pag_space": 10,
+            "pag_mgt": 10,
+            "only_show_mobile": false,
+            "pag_hide_mobile": false
+          },
+          "blocks": {}
+        },
+        "pr-heading": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 0,
+            "margin_bottom": 54
+          },
+          "blocks": {
+            "heading_section_a4zcGU": {
+              "type": "_heading_section",
+              "settings": {
+                "heading": "المنتجات الأكثر مبيعا",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_jtffRg": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p><a href=\"/collections/%D8%A7%D9%84%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7\" title=\"الأكثر مبيعا\">أكتشف المزيد ›</a></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "custom",
+                "text_color": "hdt-text-primary",
+                "font_size_text_lg": 16,
+                "font_size_text": 14,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_a4zcGU",
+            "sub_heading_section_jtffRg"
+          ]
+        }
+      },
+      "block_order": [
+        "product_carousel_eRJTQh"
       ],
       "settings": {
         "colors_by_section": true,
@@ -705,6 +826,127 @@
       "block_order": [
         "product_grid_bHNAMN"
       ],
+      "disabled": true,
+      "settings": {
+        "colors_by_section": true,
+        "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
+        "background_opacity": 0.3,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "34px,,34px,",
+        "pd_mb": ",,67px,"
+      }
+    },
+    "featured_collection_APKgK6": {
+      "type": "featured-collection",
+      "blocks": {
+        "product_carousel_9PwMQy": {
+          "type": "_product-carousel",
+          "name": "t:blocks.product_carousel.name",
+          "settings": {
+            "collection": "البوكسات-و-التوزيعات",
+            "products_count": 8,
+            "product_list": [],
+            "pr_border": "none",
+            "product_des": "6",
+            "image_ratio": "adapt_image",
+            "image_size": true,
+            "show_vendor": false,
+            "enable_one_line_title": true,
+            "hide_sale_badge": true,
+            "hide_new_badge": false,
+            "hide_bestseller_badge": true,
+            "enable_badges_right": true,
+            "hdt_slide_center": true,
+            "hdt_opacity_out_container": false,
+            "col_dk": "6",
+            "col_tb": "4",
+            "col_mb": "2",
+            "space_items": "x",
+            "pagination": false,
+            "paginate_pos": "center",
+            "dis_pagination": 30,
+            "btn_label": "",
+            "btn_style": "",
+            "icon": "none",
+            "size": "m",
+            "btn_fw": "medium",
+            "font_size_btn": 14,
+            "padding_btn": 30,
+            "min_width_btn": 100,
+            "min_width_dt_btn": 100,
+            "min_height_btn": 40,
+            "loop": false,
+            "autoplay": 0,
+            "pauseOnHover": false,
+            "navUI": false,
+            "nav_position": "default",
+            "nav_visible": "always",
+            "nav_style": "default",
+            "nav_shape": "default",
+            "nav_size": "small",
+            "nav_hide_mobile": false,
+            "dotUI": false,
+            "pag_style": "default",
+            "pag_rounded": true,
+            "pag_space": 10,
+            "pag_mgt": 10,
+            "only_show_mobile": false,
+            "pag_hide_mobile": false
+          },
+          "blocks": {}
+        },
+        "pr-heading": {
+          "type": "section-heading",
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 0,
+            "margin_bottom": 54
+          },
+          "blocks": {
+            "heading_section_AEabzt": {
+              "type": "_heading_section",
+              "settings": {
+                "heading": "البوكسات و التوزيعات",
+                "line_height": "",
+                "heading_size": "h3",
+                "text_color": "hdt-s-text",
+                "text_custom_color": "#000000",
+                "font_size_heading_lg": 50,
+                "font_size_heading": 24,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "sub_heading_section_67c8Bq": {
+              "type": "_sub_heading_section",
+              "settings": {
+                "text": "<p><a href=\"/collections/%D8%A7%D9%84%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7\" title=\"الأكثر مبيعا\">أكتشف المزيد ›</a></p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "text_size": "base",
+                "text_color": "hdt-text-primary",
+                "font_size_text_lg": 16,
+                "font_size_text": 14,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_section_AEabzt",
+            "sub_heading_section_67c8Bq"
+          ]
+        }
+      },
+      "block_order": [
+        "product_carousel_9PwMQy"
+      ],
       "settings": {
         "colors_by_section": true,
         "color_scheme": "scheme-77e4ef58-56a9-4631-876a-12098ba7d57d",
@@ -839,9 +1081,9 @@
         "b_effect": "none",
         "col_dk": "3",
         "col_tb": "3",
-        "col_mb": "1",
+        "col_mb": "2",
         "space_items": "x",
-        "layout_mode": "grid",
+        "layout_mode": "carousel",
         "loop": false,
         "autoplay": 0,
         "pauseOnHover": false,
@@ -1087,10 +1329,10 @@
             "enable_text_shadow": false,
             "margin_bottom": 16,
             "hide_on_mobile": false,
-            "font_size_mobile": 14,
-            "line_height_mobile": 0,
+            "font_size_mobile": 16,
+            "line_height_mobile": 24,
             "letter_spacing_mobile": 0,
-            "margin_bottom_mobile": 0
+            "margin_bottom_mobile": 8
           },
           "blocks": {}
         },
@@ -1111,10 +1353,10 @@
             "enable_text_shadow": false,
             "margin_bottom": 16,
             "hide_on_mobile": false,
-            "font_size_mobile": 14,
-            "line_height_mobile": 0,
+            "font_size_mobile": 10,
+            "line_height_mobile": 12,
             "letter_spacing_mobile": 0,
-            "margin_bottom_mobile": 0
+            "margin_bottom_mobile": 8
           },
           "blocks": {}
         },
@@ -1162,7 +1404,7 @@
                     "heading_size": "h_custom",
                     "text_color": "hdt-text-secondary",
                     "font_size_heading_lg": 18,
-                    "font_size_heading": 24,
+                    "font_size_heading": 14,
                     "letter_spacing_heading": 0
                   },
                   "blocks": {}
@@ -1204,7 +1446,7 @@
                     "heading_size": "h_custom",
                     "text_color": "hdt-text-secondary",
                     "font_size_heading_lg": 18,
-                    "font_size_heading": 24,
+                    "font_size_heading": 14,
                     "letter_spacing_heading": 0
                   },
                   "blocks": {}
@@ -1246,7 +1488,7 @@
                     "heading_size": "h_custom",
                     "text_color": "hdt-text-secondary",
                     "font_size_heading_lg": 18,
-                    "font_size_heading": 24,
+                    "font_size_heading": 14,
                     "letter_spacing_heading": 0
                   },
                   "blocks": {}
@@ -1498,8 +1740,10 @@
     "slideshow_EVrUzi",
     "collections_list_yGRErc",
     "featured_collection_PTq36A",
+    "featured_collection_x4FpCF",
     "icon_box_biy7yC",
     "featured_collection_DyiKtz",
+    "featured_collection_APKgK6",
     "collections_list_nQdJaE",
     "testimonial_section_C7w6in",
     "hero_image_fHP9RK",

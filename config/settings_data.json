@@ -33,7 +33,7 @@
     "heading_spacing": 0,
     "font_custom_sheading": "--f_family_3",
     "font_base": "--f_family_1",
-    "body_size": 16,
+    "body_size": 11,
     "body_lh": 1.7,
     "body_spacing": 0,
     "h0_size": 64,
@@ -133,6 +133,20 @@
     "favicon": "shopify://shop_images/4ff13ba6a89bc07c2c2bc7b74a5340e3955e2697_2a236bf2-b28d-4e82-b858-1efe9b07f3c0.png",
     "home_keywords": "",
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "13047258039897440615": {
+        "type": "shopify://apps/judge-me-reviews/blocks/cart_drawer_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+          "widget_type": "review-widget"
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -262,9 +276,9 @@
       },
       "scheme-af075ce7-6183-42ae-b662-3b2c36f742bf": {
         "settings": {
-          "text": "#EBD7B4",
-          "text2": "#D2B994",
-          "background": "#1B2D42",
+          "text": "#ebd7b4",
+          "text2": "#d2b994",
+          "background": "#1b2d42",
           "background_gradient": "",
           "background2": "#f2f2f2",
           "button": "#1a2a3a",
