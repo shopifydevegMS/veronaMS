@@ -54,12 +54,18 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: var(--ms-checklist-padding, 0);
+  border-radius: var(--ms-checklist-radius, 0);
+  background-color: var(--ms-checklist-bg, transparent);
 }
 .ms-checkitem {
   display: flex;
   align-items: center;
   padding: var(--ms-checkitem-padding, 0);
   background-color: var(--ms-checkitem-bg, transparent);
+}
+.ms-checkitem.ms-has-border {
+  border-bottom: 1.3px solid #1A2A3A4D;
 }
 .ms-checkitem-icon {
   display: inline-flex;
@@ -174,4 +180,7 @@
     padding: 5px 20px !important;
     font-size: 18px;
   }
+}
+.ms-stretch{
+  width: stretch !important;
 }

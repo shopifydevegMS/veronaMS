@@ -1,4 +1,4 @@
-<div id="block-{{ block.id }}" class="ms-checkitem" {{ block.shopify_attributes }} style="--ms-checkitem-padding: {{ block.settings.ms_padding | default: '0' }};{% if block.settings.ms_bg != blank %}--ms-checkitem-bg: {{ block.settings.ms_bg }};{% endif %}">
+<div id="block-{{ block.id }}" class="ms-checkitem{% if block.settings.ms_border_bottom %} ms-has-border{% endif %}" {{ block.shopify_attributes }} style="--ms-checkitem-padding: {{ block.settings.ms_padding | default: '0' }};{% if block.settings.ms_bg != blank %}--ms-checkitem-bg: {{ block.settings.ms_bg }};{% endif %}">
   <span class="ms-checkitem-icon">{{ block.settings.ms_svg }}</span>
   <span class="ms-checkitem-text">{{ block.settings.ms_text | default: 'Checklist item' }}</span>
 </div>
@@ -22,6 +22,12 @@
       "type": "color",
       "id": "ms_bg",
       "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "ms_border_bottom",
+      "label": "Enable border bottom",
+      "default": false
     },
     {
       "type": "text",

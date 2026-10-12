@@ -32,7 +32,7 @@
       echo image_background | image_url: width: image_background.width | image_tag: width: image_background.width, height: image_background.height, alt: image_background.alt, class: 'hdt-full-width-link hdt-w-full hdt-h-full hdt-object-cover hdt-pe-none', loading: 'lazy'
     endif
   -%}
-  <div class="hdt-column_inner hdt-place-self-{{ block.settings.content_position_mb }} md:hdt-place-self-{{ block.settings.content_position }} hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }}" style="position: relative;z-index:2;">
+  <div class="hdt-column_inner {% if block.settings.width-stretch-id %} ms-stretch {% endif %}%}  hdt-place-self-{{ block.settings.content_position_mb }} md:hdt-place-self-{{ block.settings.content_position }} hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }}" style="position: relative;z-index:2;">
     {% content_for 'blocks' %}
   </div>
 </div>
@@ -94,6 +94,11 @@
       }
     ],
     "settings": [
+      {
+        "type":"checkbox",
+        "id":"width-stretch-id",
+        "label": "full width"
+      },
       {
         "type": "header",
         "content": "t:blocks.column.layout"

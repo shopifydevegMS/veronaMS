@@ -1,4 +1,4 @@
-<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist{% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}"{% if block.settings.colors_by_block %} color-scheme="{{ block.settings.color_scheme }}"{% endif %}{% if block.settings.ms_text_color != blank %} style="--ms-checkitem-text: {{ block.settings.ms_text_color }};"{% endif %} {{ block.shopify_attributes }}>
+<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist{% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}"{% if block.settings.colors_by_block %} color-scheme="{{ block.settings.color_scheme }}"{% endif %} style="{% if block.settings.ms_bg != blank %}--ms-checklist-bg: {{ block.settings.ms_bg }};{% endif %}{% if block.settings.ms_text_color != blank %}--ms-checkitem-text: {{ block.settings.ms_text_color }};{% endif %}--ms-checklist-padding: {{ block.settings.ms_padding | default: '0' }};--ms-checklist-radius: {{ block.settings.ms_radius | default: 0 }}px;" {{ block.shopify_attributes }}>
   {% content_for "blocks" %}
 </div>
 {% schema %}
@@ -26,6 +26,27 @@
       "type": "color",
       "id": "ms_text_color",
       "label": "Text color"
+    },
+    {
+      "type": "color",
+      "id": "ms_bg",
+      "label": "Background color"
+    },
+    {
+      "type": "text",
+      "id": "ms_padding",
+      "label": "Padding",
+      "default": "0"
+    },
+    {
+      "type": "range",
+      "id": "ms_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 0
     }
   ],
   "presets": [
