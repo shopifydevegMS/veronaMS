@@ -1,0 +1,340 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "brc-nav-product",
+      "disabled": true,
+      "settings": {
+        "back_next_pr": true,
+        "colors_by_section": true,
+        "color_scheme": "scheme-c9476b69-abc7-454f-a946-2d5a9f5f3a37",
+        "background_opacity": 1,
+        "section_layout": "wrapper_container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "20px,,20px,",
+        "pd_mb": "15px,,15px,"
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "group_product_9RYttB": {
+          "type": "_group-product",
+          "settings": {
+            "colors_by_block": false,
+            "color_scheme": ""
+          },
+          "blocks": {
+            "judge_me_reviews_preview_badge_eAgcUg": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
+            "product_title_ehRqkq": {
+              "type": "_product-title",
+              "settings": {
+                "txt_tr_pr": "none",
+                "tag": "h1",
+                "heading_size": "h_custom",
+                "font_size_heading_lg": 32,
+                "font_size_heading": 26,
+                "font_weight": "bold",
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "product_price_9JizTC": {
+              "type": "_product-price",
+              "settings": {
+                "ms_reverse": true,
+                "ms_price_fs": 28,
+                "ms_price_fw": "bold",
+                "ms_price_color": "#f81005",
+                "ms_compare_fs": 18,
+                "ms_compare_fw": "medium",
+                "ms_compare_color": "",
+                "ms_show_save": true,
+                "ms_save_prefix": "وفّر",
+                "ms_save_fs": 13,
+                "ms_save_fw": "semibold",
+                "ms_save_color": "#9e7c4e",
+                "ms_save_bg": "#fff0e0"
+              },
+              "blocks": {}
+            },
+            "product_description_AJaqwJ": {
+              "type": "_product-description",
+              "settings": {
+                "des": "2",
+                "short_des": "<p></p>{{ closest.product.description }}",
+                "readm": false,
+                "length": 130,
+                "readm_txt": "Read more",
+                "readl_txt": "Read less",
+                "ffamily": "",
+                "text_size": "lg",
+                "line_height": "",
+                "font_weight": "semibold",
+                "heading_color": "",
+                "text_color": "hdt-s-text",
+                "font_size_text_lg": 16,
+                "font_size_text": 14,
+                "letter_spacing_text": 0,
+                "ms_design": "design-1",
+                "ms_bg": "#f4f0ea",
+                "ms_border_color": "#9e7c4e",
+                "ms_border_width": 3
+              },
+              "blocks": {}
+            },
+            "checklist_cpDQKD": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "colors_by_block": false,
+                "color_scheme": "",
+                "ms_text_color": ""
+              },
+              "blocks": {
+                "checkitem_CGXe3q": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "خيار مثالي لضيافة راقية",
+                    "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_padding": "0"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_4M3J9C": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "جاهزة للتقديم مباشرة",
+                    "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_padding": "0"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_EF93Ec": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "تغليف أنيق يحافظ على الجودة",
+                    "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_padding": "0"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_y3ytzW": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "20 بوكس - كل بوكس قطعتين",
+                    "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_padding": "0"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checkitem_CGXe3q",
+                "checkitem_4M3J9C",
+                "checkitem_EF93Ec",
+                "checkitem_y3ytzW"
+              ]
+            },
+            "product_buy_button_aPmAbD": {
+              "type": "_product-buy-button",
+              "settings": {
+                "show_quantity_selector": true,
+                "show_dynamic_checkout": true,
+                "show_gift_card_recipient": true,
+                "show_wishlist": true,
+                "color_wishlist": "#222222",
+                "color_hover_wishlist": "#56cfe1",
+                "color_active_wishlist": "#e81e1e",
+                "show_compare": true,
+                "color_compare": "#222222",
+                "color_hover_compare": "#56cfe1",
+                "color_active_compare": "#e81e1e",
+                "ani": "hdt-ani-shake is--infinite",
+                "time": 6,
+                "btn_transform": "hdt-uppercase",
+                "btn_style": "hdt-btn-accent",
+                "btn_fullwidth": false,
+                "ms_design": "design-1",
+                "ms_checkout_fullwidth": true,
+                "ms_checkout_bg": "#F4F0EA",
+                "ms_checkout_text": "#1A2A3A",
+                "ms_checkout_bg_hover": "#d6bd97",
+                "ms_checkout_text_hover": "#3d301d",
+                "ms_top_design": "design-1"
+              },
+              "blocks": {}
+            },
+            "checklist_q4xry8": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "colors_by_block": false,
+                "color_scheme": "",
+                "ms_text_color": "#1a7a3a"
+              },
+              "blocks": {
+                "checkitem_hLUfcK": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "✓ أطلب الحين ويصلك بنفس اليوم خلال 1 - 3 ساعات",
+                    "ms_svg": "",
+                    "ms_bg": "#edf7f0",
+                    "ms_padding": "8px 14px"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checkitem_hLUfcK"
+              ]
+            }
+          },
+          "block_order": [
+            "judge_me_reviews_preview_badge_eAgcUg",
+            "product_title_ehRqkq",
+            "product_price_9JizTC",
+            "product_description_AJaqwJ",
+            "checklist_cpDQKD",
+            "product_buy_button_aPmAbD",
+            "checklist_q4xry8"
+          ]
+        },
+        "main-product-sidebar": {
+          "type": "_product_sidebar",
+          "static": true,
+          "settings": {
+            "color_scheme": "",
+            "space": 50,
+            "last_order": false
+          },
+          "blocks": {}
+        },
+        "main-product-medias": {
+          "type": "_product-medias",
+          "static": true,
+          "settings": {
+            "media_box_size": 50,
+            "desktop_media_layout": "thumbnail_bottom",
+            "media_size": "medium",
+            "mobile_media_layout": "thumbnails",
+            "show_first_media": false,
+            "use_select_varaint_change_media": true,
+            "enable_media_autoplay": false,
+            "enable_video_looping": false,
+            "enable_thumb_efect": true,
+            "image_ratio": "adapt_image",
+            "image_size": true,
+            "image_zoom": "no",
+            "enable_lightbox_icon": false,
+            "image_zoom_type": "external",
+            "zoom_level": 2,
+            "max_zoom_lightbox": 3,
+            "navUI": false,
+            "nav_style": "outline",
+            "nav_shape": "rounded",
+            "nav_size": "small",
+            "nav_hide_mobile": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_product_9RYttB"
+      ],
+      "settings": {
+        "product_list_fbt": [],
+        "sticky_atc": true,
+        "hdt_enable_choose_variant": true,
+        "hdt_layout_atc_mob": "hdt_layout_atc_mob_default",
+        "hdt_show_sticky_atc": "hdt_show_always",
+        "ani": "hdt-ani-shake is--infinite",
+        "time": 6,
+        "btn_transform": "hdt-uppercase",
+        "btn_style": "hdt-btn-accent",
+        "colors_by_section": false,
+        "color_scheme": "",
+        "background_opacity": 1,
+        "fullwidth": false,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "48px,90px,48px,90px",
+        "pd_mb": "16px ,16px ,16px ,16px"
+      }
+    },
+    "tabs": {
+      "type": "main-product-tabs",
+      "blocks": {
+        "tab_des_tKqkJj": {
+          "type": "tab_des",
+          "settings": {
+            "title": "Description"
+          }
+        },
+        "tab_add_HXf3yk": {
+          "type": "tab_add",
+          "settings": {
+            "title": "Additional Information"
+          }
+        },
+        "tab_html_7dKb7L": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Custom tab",
+            "content": "",
+            "page": "wash-care"
+          }
+        }
+      },
+      "block_order": [
+        "tab_des_tKqkJj",
+        "tab_add_HXf3yk",
+        "tab_html_7dKb7L"
+      ],
+      "disabled": true,
+      "settings": {
+        "tabs_design": "tab",
+        "enable_first_tab": false,
+        "full_width": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-c9476b69-abc7-454f-a946-2d5a9f5f3a37",
+        "background_opacity": 1,
+        "mg": "",
+        "mg_mb": "",
+        "pd": "60px,,60px,",
+        "pd_mb": "30px,,30px,"
+      }
+    },
+    "sidebar": {
+      "type": "sidebar-product",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "space": 50
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main-product",
+    "tabs",
+    "sidebar"
+  ]
+}
