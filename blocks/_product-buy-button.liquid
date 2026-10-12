@@ -30,7 +30,7 @@
   endif
   assign product_form_id = 'product-form-'| append: section.id | append: product.id
 -%}
-<div class="hdt-product-info__item hdt-product__buy-button" {{ block.shopify_attributes }} style="width:100%;">
+<div class="hdt-product-info__item hdt-product__buy-button ms-pay-{{ block.settings.ms_design | default: 'default' }} ms-top-{{ block.settings.ms_top_design | default: 'default' }}{% if block.settings.ms_design == 'design-1' and block.settings.ms_checkout_fullwidth %} ms-pay-fullwidth{% endif %}" {{ block.shopify_attributes }} style="width:100%;{% if block.settings.ms_design == 'design-1' %}{% if block.settings.ms_checkout_bg != blank %}--ms-pay-bg: {{ block.settings.ms_checkout_bg }};{% endif %}{% if block.settings.ms_checkout_text != blank %}--ms-pay-text: {{ block.settings.ms_checkout_text }};{% endif %}{% if block.settings.ms_checkout_bg_hover != blank %}--ms-pay-bg-hover: {{ block.settings.ms_checkout_bg_hover }};{% endif %}{% if block.settings.ms_checkout_text_hover != blank %}--ms-pay-text-hover: {{ block.settings.ms_checkout_text_hover }};{% endif %}{% endif %}">
   {%- if product != blank -%}
     {%- liquid
       #assign selected_variant = product.selected_or_first_available_variant
@@ -405,6 +405,73 @@
       "label": "t:sections.main-product.blocks.buy_buttons.settings.btn_fullwidth.label",
       "default": false,
       "info": "t:sections.main-product.blocks.buy_buttons.settings.btn_fullwidth.info"
+    },
+    {
+      "type": "header",
+      "content": "Checkout design"
+    },
+    {
+      "type": "select",
+      "id": "ms_design",
+      "label": "Checkout design",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "design-1",
+          "label": "Design 1"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "checkbox",
+      "id": "ms_checkout_fullwidth",
+      "label": "Checkout button full width",
+      "default": false,
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_checkout_bg",
+      "label": "Checkout button background",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_checkout_text",
+      "label": "Checkout button text",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_checkout_bg_hover",
+      "label": "Checkout button background hover",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_checkout_text_hover",
+      "label": "Checkout button text hover",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "select",
+      "id": "ms_top_design",
+      "label": "Top buttons design",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "design-1",
+          "label": "Design 1"
+        }
+      ],
+      "default": "default"
     },
   ],
   "presets": [

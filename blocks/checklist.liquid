@@ -1,0 +1,48 @@
+<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist{% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}"{% if block.settings.colors_by_block %} color-scheme="{{ block.settings.color_scheme }}"{% endif %}{% if block.settings.ms_text_color != blank %} style="--ms-checkitem-text: {{ block.settings.ms_text_color }};"{% endif %} {{ block.shopify_attributes }}>
+  {% content_for "blocks" %}
+</div>
+{% schema %}
+{
+  "name": "Checklist",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "checkitem"
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "colors_by_block",
+      "label": "Display colors by block"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "visible_if": "{{ block.settings.colors_by_block }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_text_color",
+      "label": "Text color"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Checklist",
+      "blocks": [
+        {
+          "type": "checkitem"
+        },
+        {
+          "type": "checkitem"
+        },
+        {
+          "type": "checkitem"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

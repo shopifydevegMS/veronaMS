@@ -2,7 +2,6 @@
   assign target = product
   assign product = section.settings.product | default: target
   assign product_form_id = 'product-form-' | append: section.id | append: product.id 
-  
   assign un_no_pick = true
   if settings.pick_mode == 'no' and product.variants.size > 1
     assign selected_variant = product.selected_variant
@@ -14,14 +13,165 @@
   else
     assign selected_variant = product.selected_or_first_available_variant
   endif
+  assign ms_save_amount = 0
+  if selected_variant.compare_at_price > selected_variant.price
+    assign ms_save_amount = selected_variant.compare_at_price | minus: selected_variant.price 
+  endif
+  assign ms_save_money = ms_save_amount | money_without_trailing_zeros
 -%}
-<div class="hdt-product-info__item hdt-product__price" {{ block.shopify_attributes }}>
+{%- style -%}
+  #block-{{ block.id }} {
+    --ms-price-fs: {{ block.settings.ms_price_fs | default: 22 }}px;
+    --ms-price-fw: var(--font-{{ block.settings.ms_price_fw | default: 'semibold' }});
+    --ms-compare-fs: {{ block.settings.ms_compare_fs | default: 14 }}px;
+    --ms-compare-fw: var(--font-{{ block.settings.ms_compare_fw | default: 'normal' }});
+    --ms-save-fs: {{ block.settings.ms_save_fs | default: 14 }}px;
+    --ms-save-fw: var(--font-{{ block.settings.ms_save_fw | default: 'medium' }});
+    {%- if block.settings.ms_price_color != blank -%}--ms-price-color: {{ block.settings.ms_price_color.rgb }};{%- endif -%}
+    {%- if block.settings.ms_compare_color != blank -%}--ms-compare-color: {{ block.settings.ms_compare_color.rgb }};{%- endif -%}
+    {%- if block.settings.ms_save_color != blank -%}--ms-save-color: {{ block.settings.ms_save_color.rgb }};{%- endif -%}
+    {%- if block.settings.ms_save_bg != blank -%}--ms-save-bg: {{ block.settings.ms_save_bg.rgb }};{%- endif -%}
+  }
+{%- endstyle -%}
+<div id="block-{{ block.id }}" class="hdt-product-info__item hdt-product__price ms-product-price{% if block.settings.ms_reverse %} ms-price-reverse{% endif %}" {{ block.shopify_attributes }}>
   {%- render 'price', product: product, use_variant: true, form_id: product_form_id, show_badges: false, only_show_sale: true, show_volume_note: false, un_no_pick: un_no_pick -%}
+  {%- if block.settings.ms_show_save -%}
+    <span class="ms-save-price"{% if ms_save_amount <= 0 %} hidden{% endif %}>
+      <span class="ms-save-prefix">{{ block.settings.ms_save_prefix | default: 'وفّر' }}</span>
+      <span data-ms-save-money>{{ ms_save_money }}</span>
+    </span>
+  {%- endif -%}
 </div>
 {% schema %}
   {
     "name": "t:sections.main-product.blocks.price.name",
     "tag": null,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "ms_reverse",
+        "label": "Reverse price order",
+        "info": "Applies flex-direction: row-reverse to price elements",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Sale price"
+      },
+      {
+        "type": "range",
+        "id": "ms_price_fs",
+        "label": "Price font size",
+        "min": 12,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "default": 22
+      },
+      {
+        "type": "select",
+        "id": "ms_price_fw",
+        "label": "Price font weight",
+        "options": [
+          { "value": "light", "label": "Light" },
+          { "value": "normal", "label": "Normal" },
+          { "value": "medium", "label": "Medium" },
+          { "value": "semibold", "label": "Semibold" },
+          { "value": "bold", "label": "Bold" }
+        ],
+        "default": "semibold"
+      },
+      {
+        "type": "color",
+        "id": "ms_price_color",
+        "label": "Price color"
+      },
+      {
+        "type": "header",
+        "content": "Compare-at price"
+      },
+      {
+        "type": "range",
+        "id": "ms_compare_fs",
+        "label": "Compare price font size",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "select",
+        "id": "ms_compare_fw",
+        "label": "Compare price font weight",
+        "options": [
+          { "value": "light", "label": "Light" },
+          { "value": "normal", "label": "Normal" },
+          { "value": "medium", "label": "Medium" },
+          { "value": "semibold", "label": "Semibold" },
+          { "value": "bold", "label": "Bold" }
+        ],
+        "default": "normal"
+      },
+      {
+        "type": "color",
+        "id": "ms_compare_color",
+        "label": "Compare price color"
+      },
+      {
+        "type": "header",
+        "content": "Save badge"
+      },
+      {
+        "type": "checkbox",
+        "id": "ms_show_save",
+        "label": "Show save amount",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "ms_save_prefix",
+        "label": "Save prefix text",
+        "visible_if": "{{ block.settings.ms_show_save }}"
+      },
+      {
+        "type": "range",
+        "id": "ms_save_fs",
+        "label": "Save text font size",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "default": 14,
+        "visible_if": "{{ block.settings.ms_show_save }}"
+      },
+      {
+        "type": "select",
+        "id": "ms_save_fw",
+        "label": "Save text font weight",
+        "options": [
+          { "value": "light", "label": "Light" },
+          { "value": "normal", "label": "Normal" },
+          { "value": "medium", "label": "Medium" },
+          { "value": "semibold", "label": "Semibold" },
+          { "value": "bold", "label": "Bold" }
+        ],
+        "default": "medium",
+        "visible_if": "{{ block.settings.ms_show_save }}"
+      },
+      {
+        "type": "color",
+        "id": "ms_save_color",
+        "label": "Save text color",
+        "visible_if": "{{ block.settings.ms_show_save }}"
+      },
+      {
+        "type": "color",
+        "id": "ms_save_bg",
+        "label": "Save background color",
+        "visible_if": "{{ block.settings.ms_show_save }}"
+      }
+    ],
     "presets": [
       {
         "name": "t:sections.main-product.blocks.price.name"

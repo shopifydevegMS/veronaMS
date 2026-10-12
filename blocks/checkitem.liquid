@@ -1,0 +1,39 @@
+<div id="block-{{ block.id }}" class="ms-checkitem" {{ block.shopify_attributes }} style="--ms-checkitem-padding: {{ block.settings.ms_padding | default: '0' }};{% if block.settings.ms_bg != blank %}--ms-checkitem-bg: {{ block.settings.ms_bg }};{% endif %}">
+  <span class="ms-checkitem-icon">{{ block.settings.ms_svg }}</span>
+  <span class="ms-checkitem-text">{{ block.settings.ms_text | default: 'Checklist item' }}</span>
+</div>
+{% schema %}
+{
+  "name": "Checkitem",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "ms_text",
+      "label": "Text",
+      "default": "Checklist item"
+    },
+    {
+      "type": "liquid",
+      "id": "ms_svg",
+      "label": "SVG code"
+    },
+    {
+      "type": "color",
+      "id": "ms_bg",
+      "label": "Background color"
+    },
+    {
+      "type": "text",
+      "id": "ms_padding",
+      "label": "Padding",
+      "default": "0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Checkitem"
+    }
+  ]
+}
+{% endschema %}

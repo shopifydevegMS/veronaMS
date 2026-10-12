@@ -9,25 +9,26 @@
 -%}
 {%- capture css -%}
   {%- if block.settings.ffamily != '' -%}--ff:var({{ block.settings.ffamily }}); {%- endif -%}
+  {%- if block.settings.ms_design == 'design-1' -%}--ms-desc-border-width: {{ block.settings.ms_border_width | default: 1 }}px; {%- if block.settings.ms_bg != blank -%}--ms-desc-bg: {{ block.settings.ms_bg }}; {%- endif -%}{%- if block.settings.ms_border_color != blank -%}--ms-desc-border-color: {{ block.settings.ms_border_color }}; {%- endif -%}{%- endif -%}
 {%- endcapture -%}
 
 {%- if product.description != blank and block.settings.des == '1' -%}    
-  <div class="hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
-    <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
-      {{ product.description }}
+  <div class="hdt-product-info__item hdt-product__description ms-desc-{{ block.settings.ms_design | default: 'default' }}" {{ block.shopify_attributes }}{%- if css != blank %} style="{{ css }}"{% endif %}>
+      <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}">
+        {{ product.description }}
     </div>
   </div>
 {%- elsif description_excerpt != blank -%}
   {%- if block.settings.readm == false -%}
-    <div class="hdt-product-info__item hdt-product__description" {{ block.shopify_attributes }}>
-      <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
+    <div class="hdt-product-info__item hdt-product__description ms-desc-{{ block.settings.ms_design | default: 'default' }}" {{ block.shopify_attributes }}{%- if css != blank %} style="{{ css }}"{% endif %}>
+      <div class="hdt-rte {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}">
         {{ description_excerpt }}
       </div>
     </div>
   {%- else -%}
     {%- assign height_limit = block.settings.length | abs -%}
     <product-description class="hdt-block hdt-main-product-description" data-height-limit="{{ height_limit }}" data-type="{{ block.type }}" {{ block.shopify_attributes }}>
-      <div data-content class="hdt-product-info__item hdt-product__description hdt-relative hdt-oh {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
+      <div data-content class="hdt-product-info__item hdt-product__description ms-desc-{{ block.settings.ms_design | default: 'default' }} hdt-relative hdt-oh {{ block.settings.heading_color }} {{ block.settings.text_color }} hdt-text-{{ block.settings.text_size }} hdt-font-{{ block.settings.font_weight }} {{ block.settings.line_height }}" {%- if css != blank %} style="{{ css }}"{% endif %}>
         <div class="hdt-rte hdt-full-des">
           {{ description_excerpt }}
         </div>
@@ -308,6 +309,49 @@
       "label": "t:settings_schema.typography.settings.letter_spacing",
       "default": 0,
       "visible_if": "{{ block.settings.text_size == 'custom' }}"
+    },
+    {
+      "type": "header",
+      "content": "Designs"
+    },
+    {
+      "type": "select",
+      "id": "ms_design",
+      "label": "design",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "design-1",
+          "label": "Design 1"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "color",
+      "id": "ms_bg",
+      "label": "Background color",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "color",
+      "id": "ms_border_color",
+      "label": "Border color",
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
+    },
+    {
+      "type": "range",
+      "id": "ms_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 1,
+      "visible_if": "{{ block.settings.ms_design == 'design-1' }}"
     },
   ],
   "presets": [
