@@ -102,7 +102,10 @@
               "settings": {
                 "colors_by_block": false,
                 "color_scheme": "",
-                "ms_text_color": ""
+                "ms_text_color": "",
+                "ms_bg": "",
+                "ms_padding": "0",
+                "ms_radius": 0
               },
               "blocks": {
                 "checkitem_CGXe3q": {
@@ -111,6 +114,7 @@
                     "ms_text": "خيار مثالي لضيافة راقية",
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
+                    "ms_border_bottom": false,
                     "ms_padding": "0"
                   },
                   "blocks": {}
@@ -121,6 +125,7 @@
                     "ms_text": "جاهزة للتقديم مباشرة",
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
+                    "ms_border_bottom": false,
                     "ms_padding": "0"
                   },
                   "blocks": {}
@@ -131,6 +136,7 @@
                     "ms_text": "تغليف أنيق يحافظ على الجودة",
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
+                    "ms_border_bottom": false,
                     "ms_padding": "0"
                   },
                   "blocks": {}
@@ -141,6 +147,7 @@
                     "ms_text": "20 بوكس - كل بوكس قطعتين",
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
+                    "ms_border_bottom": false,
                     "ms_padding": "0"
                   },
                   "blocks": {}
@@ -174,8 +181,8 @@
                 "btn_fullwidth": false,
                 "ms_design": "design-1",
                 "ms_checkout_fullwidth": true,
-                "ms_checkout_bg": "#F4F0EA",
-                "ms_checkout_text": "#1A2A3A",
+                "ms_checkout_bg": "#f4f0ea",
+                "ms_checkout_text": "#1a2a3a",
                 "ms_checkout_bg_hover": "#d6bd97",
                 "ms_checkout_text_hover": "#3d301d",
                 "ms_top_design": "design-1"
@@ -188,7 +195,10 @@
               "settings": {
                 "colors_by_block": false,
                 "color_scheme": "",
-                "ms_text_color": "#1a7a3a"
+                "ms_text_color": "#1a7a3a",
+                "ms_bg": "",
+                "ms_padding": "0",
+                "ms_radius": 0
               },
               "blocks": {
                 "checkitem_hLUfcK": {
@@ -197,6 +207,7 @@
                     "ms_text": "✓ أطلب الحين ويصلك بنفس اليوم خلال 1 - 3 ساعات",
                     "ms_svg": "",
                     "ms_bg": "#edf7f0",
+                    "ms_border_bottom": false,
                     "ms_padding": "8px 14px"
                   },
                   "blocks": {}
@@ -279,6 +290,183 @@
         "pd_mb": "16px ,16px ,16px ,16px"
       }
     },
+    "custom_section_8TnmjF": {
+      "type": "custom-section",
+      "blocks": {
+        "multi_column_hmdekL": {
+          "type": "_multi_column",
+          "settings": {
+            "width-stretch-id": false,
+            "column_dk": "6",
+            "column_tb": "6",
+            "column_mb": "12",
+            "column_dk_10": "5",
+            "column_tb_10": "5",
+            "column_mb_10": "10",
+            "spacing_h_dk": 0,
+            "spacing_v_dk": 48,
+            "spacing_h_tb": 0,
+            "spacing_v_tb": 30,
+            "spacing_h_mb": 20,
+            "spacing_v_mb": 16,
+            "content_position": "center",
+            "align_content": true,
+            "content_position_mb": "center",
+            "alignment": "center",
+            "alignment_mb": "center",
+            "background_color": "#1a2a3a",
+            "rounded": "none"
+          },
+          "blocks": {
+            "heading_FP9y9A": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>كل اللي تحتاجينه بضيافة مرتبة</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "bold",
+                "heading_size": "h_custom",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 32,
+                "font_size_heading": 22,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_FP9y9A"
+          ]
+        },
+        "multi_column_KqfCDJ": {
+          "type": "_multi_column",
+          "settings": {
+            "width-stretch-id": true,
+            "column_dk": "6",
+            "column_tb": "6",
+            "column_mb": "12",
+            "column_dk_10": "5",
+            "column_tb_10": "5",
+            "column_mb_10": "10",
+            "spacing_h_dk": 30,
+            "spacing_v_dk": 30,
+            "spacing_h_tb": 30,
+            "spacing_v_tb": 30,
+            "spacing_h_mb": 15,
+            "spacing_v_mb": 15,
+            "content_position": "center",
+            "align_content": false,
+            "content_position_mb": "center",
+            "alignment": "center",
+            "alignment_mb": "center",
+            "background_color": "#1a2a3a",
+            "rounded": "none"
+          },
+          "blocks": {
+            "checklist_Q4PjRf": {
+              "type": "checklist",
+              "name": "Checklist",
+              "settings": {
+                "colors_by_block": false,
+                "color_scheme": "",
+                "ms_text_color": "#1a2a3a",
+                "ms_bg": "#eee4de",
+                "ms_padding": "24px 30px",
+                "ms_radius": 25
+              },
+              "blocks": {
+                "checkitem_pCiVnt": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "تحتوي على 20 بوكس توزيعات جاهز",
+                    "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_border_bottom": true,
+                    "ms_padding": "9px"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_7AjHWL": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "كل بوكس فيه 2 حبة شوكولاتة فاخرة",
+                    "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_border_bottom": true,
+                    "ms_padding": "9px"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_QK6ice": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "تكفي 20 شخص بكل راحة",
+                    "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_border_bottom": true,
+                    "ms_padding": "9px"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_zJ9FDU": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "تغليف مرتب يحافظ على الطعم والشكل",
+                    "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_border_bottom": true,
+                    "ms_padding": "9px"
+                  },
+                  "blocks": {}
+                },
+                "checkitem_HAjFw8": {
+                  "type": "checkitem",
+                  "settings": {
+                    "ms_text": "جاهزة للتقديم مباشرة بدون أي تجهيز إضافي",
+                    "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
+                    "ms_bg": "",
+                    "ms_border_bottom": false,
+                    "ms_padding": "9px"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "checkitem_pCiVnt",
+                "checkitem_7AjHWL",
+                "checkitem_QK6ice",
+                "checkitem_zJ9FDU",
+                "checkitem_HAjFw8"
+              ]
+            }
+          },
+          "block_order": [
+            "checklist_Q4PjRf"
+          ]
+        }
+      },
+      "block_order": [
+        "multi_column_hmdekL",
+        "multi_column_KqfCDJ"
+      ],
+      "name": "t:sections.custom_section.name",
+      "settings": {
+        "layout": "10",
+        "item_spacing": 0,
+        "item_spacing_tb": 0,
+        "item_spacing_mb": 0,
+        "colors_by_section": true,
+        "color_scheme": "scheme-dfc90434-21ec-4360-8074-117bdc58e24d",
+        "background_opacity": 0,
+        "section_layout": "full_width",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "",
+        "pd_mb": ""
+      }
+    },
     "tabs": {
       "type": "main-product-tabs",
       "blocks": {
@@ -334,6 +522,7 @@
   "order": [
     "breadcrumb",
     "main-product",
+    "custom_section_8TnmjF",
     "tabs",
     "sidebar"
   ]
