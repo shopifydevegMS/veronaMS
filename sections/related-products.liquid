@@ -74,7 +74,7 @@
       <product-recommendations data-section-id="{{ section.id }}" class="related-products" data-url="{{ url }}" data-fetch-type="{{ section.settings.display_type }}">
           {%- if section.settings.display_type == '4' -%}
             {%- if recommendations.performed and recommendations.products_count > 0 -%}
-            <hdt-slider id="Slider-{{ section.id }}" class="hdt-collection-products hdt-slider__products hdt-collection-has-pr{{ section.settings.product_des }} hdt-pr-border_{{ section.settings.pr_border }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-slider-parent hdt-slide-spacing-{{ section.settings.space_items }} hdt-relative {% if section.settings.navUI %}hdt-slider-has-nav{% endif %} lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "dotUI": true, "navUICenter": true }'>
+            <hdt-slider id="Slider-{{ section.id }}" class="hdt-collection-products hdt-slider__products hdt-collection-has-pr{{ section.settings.product_des }} hdt-pr-border_{{ section.settings.pr_border }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-slider-parent hdt-slide-spacing-{{ section.settings.space_items }} hdt-relative {% if section.settings.navUI %}hdt-slider-has-nav{% endif %} lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}{% if section.settings.enable_one_line_title %} ms-pr-title--one-line{% endif %}{% if section.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if section.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if section.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}{% if section.settings.enable_badges_right %} ms-badges-right{% endif %} ms-badges-top-rounded ms-card-info-box" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "dotUI": true, "navUICenter": true }'>
               <div class="hdt-slider__viewport hdt-relative">
                 {%- render 'related_option', products: products, p_id: product.id -%}
               </div>
@@ -96,7 +96,7 @@
               <div style="height: 200px;width: 100%;background-color: rgb(var(--hdt-btn-tertiary-color) /.5);"></div>
             {%- endif -%}
           {%- else -%}
-            <hdt-slider id="Slider-{{ section.id }}" class="hdt-collection-products {% if section.settings.display_type == '2' and product.vendor.size < 1 or section.settings.display_type == '3' and product.type.size < 1 %} hdt-hidden-heading {% endif %} hdt-slider__products hdt-collection-has-pr{{ section.settings.product_des }} hdt-pr-border_{{ section.settings.pr_border }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-slider-parent hdt-slide-spacing-{{ section.settings.space_items }} hdt-relative {% if section.settings.navUI %}hdt-slider-has-nav{% endif %} lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "dotUI": true, "navUICenter": true }'>
+            <hdt-slider id="Slider-{{ section.id }}" class="hdt-collection-products {% if section.settings.display_type == '2' and product.vendor.size < 1 or section.settings.display_type == '3' and product.type.size < 1 %} hdt-hidden-heading {% endif %} hdt-slider__products hdt-collection-has-pr{{ section.settings.product_des }} hdt-pr-border_{{ section.settings.pr_border }} hdt-ratio--{{ section.settings.image_ratio }} {% unless section.settings.image_size %} hdt-ratio--contain{% endunless %} hdt-slider hdt-slider-parent hdt-slide-spacing-{{ section.settings.space_items }} hdt-relative {% if section.settings.navUI %}hdt-slider-has-nav{% endif %} lg:hdt-slides-{{ section.settings.col_dk }} md:hdt-slides-{{ section.settings.col_tb }} hdt-slides-{{ section.settings.col_mb }}{% if section.settings.enable_one_line_title %} ms-pr-title--one-line{% endif %}{% if section.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if section.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if section.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}{% if section.settings.enable_badges_right %} ms-badges-right{% endif %} ms-badges-top-rounded ms-card-info-box" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "pauseOnHover": {{ section.settings.pauseOnHover }}, "autoPlay": {{ section.settings.autoplay | times: 1000 }}, "dotUI": true, "navUICenter": true }'>
               <div class="hdt-slider__viewport hdt-relative">
                 {%- render 'related_option', products: products, p_id: product.id -%}
               </div>
@@ -229,6 +229,36 @@
         "type": "checkbox",
         "id": "show_vendor",
         "label": "t:sections.recently-products.settings.show_vendor.label",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_one_line_title",
+        "label": "Enable one line title",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_sale_badge",
+        "label": "Hide sale badge",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_new_badge",
+        "label": "Hide new badge",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_bestseller_badge",
+        "label": "Hide bestseller badge",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_badges_right",
+        "label": "Move badges to right",
         "default": false
       },
       {

@@ -52,7 +52,7 @@
   padding: 12px !important;
   text-align: right !important;
   justify-items: end !important;
-  width: 195px;
+  width: 100%;
   height: 130px !important;
   min-height: 130px !important;
   max-height: 130px !important;
@@ -302,6 +302,14 @@ h3 {
   .hdt-container.ms-imgtext-design-1 {
     padding: 0;
   }
+}
+.hdt-related-products .ms-card-info-box .hdt-card-product__info .hdt-card-product__btn-ultra {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
   .hdt-ratio-mb--square,
   .hdt-ratio-mb--square .hdt-ratio {
     --ratio-percent: 100%;
