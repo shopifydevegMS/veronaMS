@@ -242,6 +242,7 @@
         },
         "main-product-sidebar": {
           "type": "_product_sidebar",
+          "disabled": true,
           "static": true,
           "settings": {
             "color_scheme": "",
@@ -274,7 +275,10 @@
             "nav_style": "outline",
             "nav_shape": "rounded",
             "nav_size": "small",
-            "nav_hide_mobile": true
+            "nav_hide_mobile": true,
+            "hide_sale_badge": true,
+            "hide_new_badge": true,
+            "hide_bestseller_badge": true
           },
           "blocks": {}
         }
