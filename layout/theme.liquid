@@ -58,8 +58,13 @@
     {%- endunless -%}
   </head>
   
+{% if template.suffix == 'ms-productpage' %}
 {{ 'custom-product.css' | asset_url | stylesheet_tag: preload: true }}
+{% endif %}
 {{ 'custom-general.css' | asset_url | stylesheet_tag: preload: true }}
+{% if template.suffix == 'ms-collectionpage' %}
+{{ 'custom-collection.css' | asset_url | stylesheet_tag: preload: true }}
+{% endif %}
 
   <body class="hdt-page-type-{{ request.page_type }}">
     {% comment %} {%- section 'product-card-configs' -%} {% endcomment %}
