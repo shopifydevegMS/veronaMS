@@ -48,7 +48,7 @@
     }
   }
 </style>
-<div class="hdt-product-media-wrapps hdt-group-block hdt-s-gradient hdt-group-block--{{ block.id }}">
+<div class="hdt-product-media-wrapps hdt-group-block hdt-s-gradient hdt-group-block--{{ block.id }}{% if block.settings.hide_sale_badge %} ms-hide-sale-badge{% endif %}{% if block.settings.hide_new_badge %} ms-hide-new-badge{% endif %}{% if block.settings.hide_bestseller_badge %} ms-hide-bestseller-badge{% endif %}">
   {%- if product != blank -%}
     {%- capture start_index -%}
     {%- unless group_media_obj.size > 0 %}, "startIndex": {% if block.settings.show_first_media or un_no_pick == false %}0{% else %}{{ selected_variant_featured_media.position | default: 1 | minus: 1 }}{% endif %}{% endunless -%}
@@ -620,6 +620,24 @@
       "label": "t:blocks.carousel.settings.pagination.pag_hide_mobile",
       "default": false,
       "visible_if": "{{ block.settings.navUI }}",
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_sale_badge",
+      "label": "Hide sale badge",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_new_badge",
+      "label": "Hide new badge",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_bestseller_badge",
+      "label": "Hide bestseller badge",
+      "default": false
     },
   ],
   /*"presets": [{ "name": "t:sections.main-product.blocks.medias.name" }]*/
