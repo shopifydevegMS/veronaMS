@@ -105,7 +105,8 @@
                 "ms_text_color": "",
                 "ms_bg": "",
                 "ms_padding": "0",
-                "ms_radius": 0
+                "ms_radius": 0,
+                "ms_width": 100
               },
               "blocks": {
                 "checkitem_CGXe3q": {
@@ -115,7 +116,9 @@
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": false,
-                    "ms_padding": "0"
+                    "ms_padding": "0",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -126,7 +129,9 @@
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": false,
-                    "ms_padding": "0"
+                    "ms_padding": "0",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -137,7 +142,9 @@
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": false,
-                    "ms_padding": "0"
+                    "ms_padding": "0",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -148,7 +155,9 @@
                     "ms_svg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10Z\" fill=\"#1A7A3A\"/>\n<path d=\"M6.33325 10L9.08325 12.75L13.6666 7.25\" stroke=\"white\" stroke-width=\"1.83333\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": false,
-                    "ms_padding": "0"
+                    "ms_padding": "0",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 }
@@ -198,7 +207,8 @@
                 "ms_text_color": "#1a7a3a",
                 "ms_bg": "",
                 "ms_padding": "0",
-                "ms_radius": 0
+                "ms_radius": 0,
+                "ms_width": 100
               },
               "blocks": {
                 "checkitem_hLUfcK": {
@@ -208,7 +218,9 @@
                     "ms_svg": "",
                     "ms_bg": "#edf7f0",
                     "ms_border_bottom": false,
-                    "ms_padding": "8px 14px"
+                    "ms_padding": "8px 14px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 }
@@ -373,7 +385,8 @@
                 "ms_text_color": "#1a2a3a",
                 "ms_bg": "#eee4de",
                 "ms_padding": "24px 30px",
-                "ms_radius": 25
+                "ms_radius": 25,
+                "ms_width": 100
               },
               "blocks": {
                 "checkitem_pCiVnt": {
@@ -383,7 +396,9 @@
                     "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": true,
-                    "ms_padding": "9px"
+                    "ms_padding": "9px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -394,7 +409,9 @@
                     "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": true,
-                    "ms_padding": "9px"
+                    "ms_padding": "9px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -405,7 +422,9 @@
                     "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": true,
-                    "ms_padding": "9px"
+                    "ms_padding": "9px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -416,7 +435,9 @@
                     "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": true,
-                    "ms_padding": "9px"
+                    "ms_padding": "9px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 },
@@ -427,7 +448,9 @@
                     "ms_svg": "<svg width=\"26\" height=\"26\" viewBox=\"0 0 26 26\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 12.9701C0 5.80691 5.82827 0 12.9915 0C20.1546 0 25.9829 5.80691 25.9829 12.9701C25.9829 20.1333 20.1546 25.9402 12.9915 25.9402C5.82827 25.9402 0 20.1333 0 12.9701Z\" fill=\"#1A2A3A\"/>\n<path d=\"M8.21509 12.9702L11.7819 16.537L17.7265 9.40344\" stroke=\"#C9A97A\" stroke-width=\"2.37785\"/>\n</svg>",
                     "ms_bg": "",
                     "ms_border_bottom": false,
-                    "ms_padding": "9px"
+                    "ms_padding": "9px",
+                    "ms_icon_width": 20,
+                    "ms_icon_height": 20
                   },
                   "blocks": {}
                 }
@@ -464,6 +487,415 @@
         "mg": "",
         "mg_mb": ",,30px,",
         "pd": "",
+        "pd_mb": ""
+      }
+    },
+    "icon_box_aLaVFj": {
+      "type": "icon-box",
+      "blocks": {
+        "icon_box_AGBTti": {
+          "type": "_icon_box",
+          "name": "Icon box",
+          "settings": {
+            "url": "",
+            "open_in_new_tab": false,
+            "icon_position": "left",
+            "image": "shopify://shop_images/94338be7379ae53e7fc3938359c982e6cde19cec_1.png",
+            "image_width": 48,
+            "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z\"></path></svg>",
+            "svg_width": 48,
+            "svg_width_mb": 40,
+            "heading": "",
+            "description": "شحن سريع ومضمون"
+          },
+          "blocks": {}
+        },
+        "icon_box_3EK3Ba": {
+          "type": "_icon_box",
+          "name": "Icon box",
+          "settings": {
+            "url": "",
+            "open_in_new_tab": false,
+            "icon_position": "left",
+            "image": "shopify://shop_images/93c437ebdd4789fc6258418b0d412cf4afe846b7.png",
+            "image_width": 48,
+            "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z\"></path></svg>",
+            "svg_width": 48,
+            "svg_width_mb": 40,
+            "heading": "",
+            "description": "جودة تلاحظها من أول قطعة"
+          },
+          "blocks": {}
+        },
+        "icon_box_pKzb7r": {
+          "type": "_icon_box",
+          "name": "Icon box",
+          "settings": {
+            "url": "",
+            "open_in_new_tab": false,
+            "icon_position": "left",
+            "image": "shopify://shop_images/fea98e63affc202c46d3f51648b32f932e294233.png",
+            "image_width": 48,
+            "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z\"></path></svg>",
+            "svg_width": 48,
+            "svg_width_mb": 40,
+            "heading": "",
+            "description": "تغليف فخم وأنيق"
+          },
+          "blocks": {}
+        },
+        "icon_box_6kKt44": {
+          "type": "_icon_box",
+          "name": "Icon box",
+          "settings": {
+            "url": "",
+            "open_in_new_tab": false,
+            "icon_position": "left",
+            "image": "shopify://shop_images/b3b96b6c7368823389e28311ef8dce5aa9b75b3b.png",
+            "image_width": 48,
+            "svg_upload": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z\"></path></svg>",
+            "svg_width": 48,
+            "svg_width_mb": 40,
+            "heading": "",
+            "description": "تنويع نكهات لكل الأذواق"
+          },
+          "blocks": {}
+        },
+        "icon-box": {
+          "type": "section-heading",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "center",
+            "heading_gap": 15,
+            "margin_bottom": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_box_AGBTti",
+        "icon_box_3EK3Ba",
+        "icon_box_pKzb7r",
+        "icon_box_6kKt44"
+      ],
+      "name": "Icon box",
+      "settings": {
+        "box_design": "design_1",
+        "enable_border": false,
+        "enable_box_shadow": false,
+        "border_color": "#eee4de",
+        "heading_color": "#2a3a4a",
+        "icon_color": "#222",
+        "description_color": "#eee4de",
+        "color_box": "#1a2a3a",
+        "color_box_hover": "#1a2a3a",
+        "color_content_hover": "#eee4de",
+        "source": "image",
+        "padding": "20px,20px,20px,20px",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_horizontal": "0",
+        "space_vertical": "30",
+        "space_horizontal_mb": "10",
+        "space_vertical_mb": "30",
+        "layout": "grid",
+        "loop": false,
+        "autoplay": 0,
+        "pauseOnHover": false,
+        "navUI": false,
+        "nav_position": "default",
+        "nav_visible": "always",
+        "nav_style": "default",
+        "nav_shape": "default",
+        "nav_size": "small",
+        "nav_hide_mobile": false,
+        "dotUI": false,
+        "pag_style": "default",
+        "pag_rounded": false,
+        "pag_space": 10,
+        "pag_mgt": 10,
+        "only_show_mobile": false,
+        "pag_hide_mobile": false,
+        "colors_by_section": true,
+        "color_scheme": "scheme-1",
+        "background_opacity": 1,
+        "section_layout": "container",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "48px,,48px,",
+        "pd_mb": "16px,16px ,16px ,16px"
+      }
+    },
+    "image_text_XaHVrg": {
+      "type": "image_text",
+      "blocks": {
+        "image_text_col_QNTrCK": {
+          "type": "_image-text-col",
+          "settings": {
+            "alignment": "left",
+            "alignment_mb": "left",
+            "colors_by_block": false,
+            "color_scheme": "",
+            "align_center": true,
+            "padding_h": 0,
+            "padding_v": 0,
+            "padding_h_mb": 15,
+            "padding_v_mb": 15
+          },
+          "blocks": {
+            "heading_7mVfMg": {
+              "type": "heading",
+              "settings": {
+                "heading": "<p>وش اللي يميزها فعلًا؟</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "line_height": "",
+                "font_weight": "bold",
+                "heading_size": "h_custom",
+                "text_color": "hdt-s-text",
+                "font_size_heading_lg": 40,
+                "font_size_heading": 20,
+                "letter_spacing_heading": 0
+              },
+              "blocks": {}
+            },
+            "spacer_z8Ehap": {
+              "type": "spacer",
+              "settings": {
+                "direction": false,
+                "space_lg": 28,
+                "space_md": 22,
+                "space": 16
+              },
+              "blocks": {}
+            },
+            "text_zVDrC6": {
+              "type": "text",
+              "settings": {
+                "text": "<p>كل قطعة فيها لمسة فخمة... تعالي اكتشفي ليش هالصينية تميز ضيافتك!\"</p>",
+                "hidden_br_mobile": false,
+                "hidden_on_mobile": false,
+                "ffamily": "",
+                "text_size": "custom",
+                "line_height": "",
+                "font_weight": "normal",
+                "text_color": "hdt-text-secondary",
+                "countdown": "2025-12-30 15:00:00",
+                "txt_day": "days",
+                "font_size_text_lg": 16,
+                "font_size_text": 13,
+                "letter_spacing_text": 0
+              },
+              "blocks": {}
+            },
+            "spacer_xRLdxW": {
+              "type": "spacer",
+              "settings": {
+                "direction": false,
+                "space_lg": 28,
+                "space_md": 22,
+                "space": 16
+              },
+              "blocks": {}
+            },
+            "ms_checklist_group_izKtMU": {
+              "type": "ms-checklist-group",
+              "name": "Checklist group",
+              "settings": {},
+              "blocks": {
+                "checklist_dbLqe8": {
+                  "type": "checklist",
+                  "name": "Checklist",
+                  "settings": {
+                    "colors_by_block": false,
+                    "color_scheme": "",
+                    "ms_text_color": "",
+                    "ms_bg": "",
+                    "ms_padding": "0",
+                    "ms_radius": 0,
+                    "ms_width": 50
+                  },
+                  "blocks": {
+                    "checkitem_UAjNeb": {
+                      "type": "checkitem",
+                      "name": "Checkitem",
+                      "settings": {
+                        "ms_text": "تقديم أنيق يصلح كهدية",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<path d=\"M26.6667 16.6666H13.3333C12.8731 16.6666 12.5 17.0397 12.5 17.5V19.1666C12.5 19.6269 12.8731 20 13.3333 20H26.6667C27.1269 20 27.5 19.6269 27.5 19.1666V17.5C27.5 17.0397 27.1269 16.6666 26.6667 16.6666Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M25.8334 20V27.5H14.1667V20\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 16.6666V27.5\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20.0001 16.6666C20.0001 16.6666 17.5001 14.1666 15.8334 14.1666C15.3914 14.1666 14.9675 14.3422 14.6549 14.6548C14.3423 14.9673 14.1667 15.3913 14.1667 15.8333C14.1667 16.2753 14.3423 16.6992 14.6549 17.0118C14.9675 17.3244 15.3914 17.5 15.8334 17.5H20.0001\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 16.6666C20 16.6666 22.5 14.1666 24.1667 14.1666C24.6087 14.1666 25.0326 14.3422 25.3452 14.6548C25.6577 14.9673 25.8333 15.3913 25.8333 15.8333C25.8333 16.2753 25.6577 16.6992 25.3452 17.0118C25.0326 17.3244 24.6087 17.5 24.1667 17.5H20\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    },
+                    "checkitem_G7B8pf": {
+                      "type": "checkitem",
+                      "settings": {
+                        "ms_text": "شوكولاتة مختارة بعناية",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<path d=\"M19.9999 28.3333C19.9999 28.3333 26.6666 25 26.6666 20V14.1666L19.9999 11.6666L13.3333 14.1666V20C13.3333 25 19.9999 28.3333 19.9999 28.3333Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M17.5 20L19.1667 21.6667L22.5 18.3334\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    },
+                    "checkitem_zMbQYV": {
+                      "type": "checkitem",
+                      "settings": {
+                        "ms_text": "جودة تلاحظها من أول قطعة",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<path d=\"M20 21.6666C22.7614 21.6666 25 19.428 25 16.6666C25 13.9052 22.7614 11.6666 20 11.6666C17.2386 11.6666 15 13.9052 15 16.6666C15 19.428 17.2386 21.6666 20 21.6666Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M22.8974 20.7417L24.1666 28.3334L19.9999 25.8334L15.8333 28.3334L17.1024 20.7417\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "checkitem_UAjNeb",
+                    "checkitem_G7B8pf",
+                    "checkitem_zMbQYV"
+                  ]
+                },
+                "checklist_ACryeR": {
+                  "type": "checklist",
+                  "name": "Checklist",
+                  "settings": {
+                    "colors_by_block": false,
+                    "color_scheme": "",
+                    "ms_text_color": "",
+                    "ms_bg": "",
+                    "ms_padding": "0",
+                    "ms_radius": 0,
+                    "ms_width": 50
+                  },
+                  "blocks": {
+                    "checkitem_TCiEdW": {
+                      "type": "checkitem",
+                      "settings": {
+                        "ms_text": "حشوات غنية وموزونة",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<path d=\"M20 11.6666L21.7417 17.025H27.5L22.9417 20.3333L24.6833 25.6916L20 22.3916L15.3167 25.6916L17.0583 20.3333L12.5 17.025H18.2583L20 11.6666Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    },
+                    "checkitem_DkBdpQ": {
+                      "type": "checkitem",
+                      "settings": {
+                        "ms_text": "تنويع نكهات يرضي كل الأذواق",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<path d=\"M20.0001 11.6666L27.0834 16.6666V23.3333L20.0001 28.3333L12.9167 23.3333V16.6666L20.0001 11.6666Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 11.6666V28.3333\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12.9167 16.6666H27.0834\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12.9167 23.3334H27.0834\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    },
+                    "checkitem_tmMNam": {
+                      "type": "checkitem",
+                      "settings": {
+                        "ms_text": "تجربة مثالية مع القهوة",
+                        "ms_svg": "<svg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect width=\"40\" height=\"40\" rx=\"20\" fill=\"#EEF1F8\"/>\n<g clip-path=\"url(#clip0_137_1334)\">\n<path d=\"M25 16.6666H25.8333C26.7174 16.6666 27.5652 17.0178 28.1904 17.6429C28.8155 18.2681 29.1667 19.1159 29.1667 20C29.1667 20.884 28.8155 21.7319 28.1904 22.357C27.5652 22.9821 26.7174 23.3333 25.8333 23.3333H25\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M11.6667 16.6666H25.0001V24.1666C25.0001 25.0507 24.6489 25.8985 24.0238 26.5236C23.3986 27.1488 22.5508 27.5 21.6667 27.5H15.0001C14.116 27.5 13.2682 27.1488 12.6431 26.5236C12.0179 25.8985 11.6667 25.0507 11.6667 24.1666V16.6666Z\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M15 10.8334V13.3334\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M18.3333 10.8334V13.3334\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M21.6667 10.8334V13.3334\" stroke=\"#1A2A3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_137_1334\">\n<rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(10 10)\"/>\n</clipPath>\n</defs>\n</svg>",
+                        "ms_bg": "",
+                        "ms_border_bottom": false,
+                        "ms_padding": "0 0 18px 0",
+                        "ms_icon_width": 40,
+                        "ms_icon_height": 40
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "checkitem_TCiEdW",
+                    "checkitem_DkBdpQ",
+                    "checkitem_tmMNam"
+                  ]
+                }
+              },
+              "block_order": [
+                "checklist_dbLqe8",
+                "checklist_ACryeR"
+              ]
+            }
+          },
+          "block_order": [
+            "heading_7mVfMg",
+            "spacer_z8Ehap",
+            "text_zVDrC6",
+            "spacer_xRLdxW",
+            "ms_checklist_group_izKtMU"
+          ]
+        },
+        "image_text_column_bn4thJ": {
+          "type": "_image-text-column",
+          "settings": {
+            "image_position": ""
+          },
+          "blocks": {
+            "image_JDqRpj": {
+              "type": "image",
+              "settings": {
+                "img": "shopify://shop_images/2db7007ac3fcf448a01235769d266788a44c69df.png",
+                "image_ratio": "adapt_image",
+                "image_ratio_mb": "landscape",
+                "img_effect": "none",
+                "b_effect": "none",
+                "custom_width": "full",
+                "image_w": 50,
+                "image_w_mb": 50
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "image_JDqRpj"
+          ]
+        },
+        "image-text-heading": {
+          "type": "section-heading",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "design_heading": "1",
+            "horizontal": false,
+            "alignment": "left",
+            "heading_gap": 15,
+            "margin_bottom": 30
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_text_col_QNTrCK",
+        "image_text_column_bn4thJ"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "colors_by_section": false,
+        "color_scheme": "",
+        "background_opacity": 0,
+        "section_layout": "wrapper_container",
+        "ms_design": "design_1",
+        "hdt_background_parallax": false,
+        "mg": "",
+        "mg_mb": ",,30px,",
+        "pd": "16px,,48px,",
         "pd_mb": ""
       }
     },
@@ -523,6 +955,8 @@
     "breadcrumb",
     "main-product",
     "custom_section_8TnmjF",
+    "icon_box_aLaVFj",
+    "image_text_XaHVrg",
     "tabs",
     "sidebar"
   ]
