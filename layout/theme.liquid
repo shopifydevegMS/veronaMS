@@ -57,6 +57,9 @@
     {{ content_for_header }}
     {%- endunless -%}
   </head>
+  
+{{ 'custom-product.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'custom-general.css' | asset_url | stylesheet_tag: preload: true }}
 
   <body class="hdt-page-type-{{ request.page_type }}">
     {% comment %} {%- section 'product-card-configs' -%} {% endcomment %}
