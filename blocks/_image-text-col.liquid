@@ -14,7 +14,7 @@
     }
   }
 {% endstyle %}
-<div id="{{ block.id }}" class="hdt-image_text_column hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }}{% if block.settings.align_center %} hdt-align-self-center{% endif %} {% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}" {% if block.settings.colors_by_block %}color-scheme="{{ block.settings.color_scheme }}"{% endif %} {{ block.shopify_attributes }}>
+<div id="{{ block.id }}" class="ms-image-text-content hdt-image_text_column hdt-text-{{ block.settings.alignment_mb }} md:hdt-text-{{ block.settings.alignment }}{% if block.settings.align_center %} hdt-align-self-center{% endif %} {% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}" {% if block.settings.colors_by_block %}color-scheme="{{ block.settings.color_scheme }}"{% endif %} {{ block.shopify_attributes }}>
   {% content_for "blocks" %}
 </div>
 {% schema %}

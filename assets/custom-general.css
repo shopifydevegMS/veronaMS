@@ -126,6 +126,7 @@ h3 {
 }
 .ms-iconbox-design_1 .hdt-iconbox-item {
   background: var(--color-box);
+  height: stretch;
 }
 .ms-iconbox-design_1 .hdt-iconbox-item-wrapper {
   border-radius: 0 !important;
@@ -212,11 +213,11 @@ h3 {
     font-size: 12px !important;
   }
 }
-.hdt-slider__viewport {
+/* .hdt-slider__viewport {
   @media (max-width: 767px) {
     width: 100vw;
   }
-}
+} */
 .ms-overflow-hidden {
   overflow: hidden !important;
 }
@@ -286,5 +287,38 @@ h3 {
     max-height: 90% !important;
     display: block !important;
     flex-shrink: 0 !important;
+  }
+}
+.hdt-container.ms-imgtext-design-1 {
+  box-shadow: 0px 21px 80px 0px #00000033;
+  border-radius: 28px;
+  padding: 0 1.5rem 0 0;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .ms-image-text-content {
+    order: 2;
+  }
+  .hdt-container.ms-imgtext-design-1 {
+    padding: 0;
+  }
+  .hdt-ratio-mb--square,
+  .hdt-ratio-mb--square .hdt-ratio {
+    --ratio-percent: 100%;
+  }
+  .hdt-ratio-mb--portrait,
+  .hdt-ratio-mb--portrait .hdt-ratio {
+    --ratio-percent: 125%;
+  }
+  .hdt-ratio-mb--asos,
+  .hdt-ratio-mb--asos .hdt-ratio {
+    --ratio-percent: 127.7777778%;
+  }
+  .hdt-ratio-mb--landscape,
+  .hdt-ratio-mb--landscape .hdt-ratio {
+    --ratio-percent: 66.6%;
+  }
+  .hdt-ratio-mb--adapt_image .hdt-ratio {
+    --ratio-percent: calc(100% / var(--aspect-ratioapt));
   }
 }

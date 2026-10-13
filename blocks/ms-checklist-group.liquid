@@ -1,0 +1,28 @@
+<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist-group" {{ block.shopify_attributes }}>
+  {% content_for "blocks" %}
+</div>
+{% schema %}
+{
+  "name": "Checklist group",
+  "tag": null,
+  "blocks": [
+    {
+      "type": "checklist"
+    }
+  ],
+  "settings": [],
+  "presets": [
+    {
+      "name": "Checklist group",
+      "blocks": [
+        {
+          "type": "checklist"
+        },
+        {
+          "type": "checklist"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

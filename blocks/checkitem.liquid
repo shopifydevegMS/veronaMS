@@ -1,4 +1,4 @@
-<div id="block-{{ block.id }}" class="ms-checkitem{% if block.settings.ms_border_bottom %} ms-has-border{% endif %}" {{ block.shopify_attributes }} style="--ms-checkitem-padding: {{ block.settings.ms_padding | default: '0' }};{% if block.settings.ms_bg != blank %}--ms-checkitem-bg: {{ block.settings.ms_bg }};{% endif %}">
+<div id="block-{{ block.id }}" class="ms-checkitem{% if block.settings.ms_border_bottom %} ms-has-border{% endif %}" {{ block.shopify_attributes }} style="--ms-checkitem-padding: {{ block.settings.ms_padding | default: '0' }};--ms-checkitem-icon-w: {{ block.settings.ms_icon_width | default: 20 }}px;--ms-checkitem-icon-h: {{ block.settings.ms_icon_height | default: 20 }}px;{% if block.settings.ms_bg != blank %}--ms-checkitem-bg: {{ block.settings.ms_bg }};{% endif %}">
   <span class="ms-checkitem-icon">{{ block.settings.ms_svg }}</span>
   <span class="ms-checkitem-text">{{ block.settings.ms_text | default: 'Checklist item' }}</span>
 </div>
@@ -34,6 +34,26 @@
       "id": "ms_padding",
       "label": "Padding",
       "default": "0"
+    },
+    {
+      "type": "range",
+      "id": "ms_icon_width",
+      "label": "Icon width",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "ms_icon_height",
+      "label": "Icon height",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 20
     }
   ],
   "presets": [

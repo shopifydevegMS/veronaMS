@@ -21,7 +21,7 @@
   endcase
 %}
 <div id="{{ section.id }}" class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};"{%- endif %} hdt-reveal="fade-in">
-  <div class="{{ child }}">
+  <div class="{{ child }}{% if section.settings.ms_design == 'design_1' %} ms-imgtext-design-1{% endif %}">
     {%- if section.settings.section_background != blank -%}
       {% liquid
         assign image = section.settings.section_background
@@ -100,6 +100,23 @@
           }
         ],
         "default": "container"
+      },
+      {
+        "type": "select",
+        "id": "ms_design",
+        "label": "design",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "design_1",
+            "label": "Design 1"
+          }
+        ],
+        "default": "default",
+        "visible_if": "{{ section.settings.section_layout == 'wrapper_container' }}"
       },
       {
         "type": "image_picker",

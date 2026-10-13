@@ -1,4 +1,4 @@
-<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist{% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}"{% if block.settings.colors_by_block %} color-scheme="{{ block.settings.color_scheme }}"{% endif %} style="{% if block.settings.ms_bg != blank %}--ms-checklist-bg: {{ block.settings.ms_bg }};{% endif %}{% if block.settings.ms_text_color != blank %}--ms-checkitem-text: {{ block.settings.ms_text_color }};{% endif %}--ms-checklist-padding: {{ block.settings.ms_padding | default: '0' }};--ms-checklist-radius: {{ block.settings.ms_radius | default: 0 }}px;" {{ block.shopify_attributes }}>
+<div id="block-{{ block.id }}" class="hdt-product-info__item ms-checklist{% if block.settings.colors_by_block %} hdt-s-gradient{% endif %}"{% if block.settings.colors_by_block %} color-scheme="{{ block.settings.color_scheme }}"{% endif %} style="{% if block.settings.ms_bg != blank %}--ms-checklist-bg: {{ block.settings.ms_bg }};{% endif %}{% if block.settings.ms_text_color != blank %}--ms-checkitem-text: {{ block.settings.ms_text_color }};{% endif %}--ms-checklist-padding: {{ block.settings.ms_padding | default: '0' }};--ms-checklist-radius: {{ block.settings.ms_radius | default: 0 }}px;--ms-checklist-width: {{ block.settings.ms_width | default: 100 }}%;" {{ block.shopify_attributes }}>
   {% content_for "blocks" %}
 </div>
 {% schema %}
@@ -47,6 +47,16 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "range",
+      "id": "ms_width",
+      "label": "Width",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 100
     }
   ],
   "presets": [

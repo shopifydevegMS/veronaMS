@@ -58,6 +58,23 @@
   border-radius: var(--ms-checklist-radius, 0);
   background-color: var(--ms-checklist-bg, transparent);
 }
+.hdt-product-info__item.ms-checklist {
+  width: var(--ms-checklist-width, 100%);
+}
+.ms-checklist-group {
+  display: flex;
+  gap: 16px;
+}
+.ms-checklist-group > .ms-checklist {
+  flex: 1 1 var(--ms-checklist-width, 100%);
+  min-width: min(100%, 240px);
+}
+@media (max-width: 767px) {
+  .ms-checklist-group {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .ms-checkitem {
   display: flex;
   align-items: center;
@@ -78,8 +95,8 @@
 }
 .ms-checkitem-icon svg {
   display: block;
-  width: 1.25em;
-  height: 1.25em;
+  width: var(--ms-checkitem-icon-w, 1.25em);
+  height: var(--ms-checkitem-icon-h, 1.25em);
 }
 .ms-checkitem-text {
   font-size: 14px;
