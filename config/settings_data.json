@@ -294,6 +294,27 @@
           "input_primary": "#ffffff",
           "input_secondary": "#878787"
         }
+      },
+      "scheme-90673be9-00a1-4230-8d92-9efc5d7db4bc": {
+        "settings": {
+          "text": "#1A1A1A",
+          "text2": "#777777",
+          "background": "#EEE4DE",
+          "background_gradient": "",
+          "background2": "#f2f2f2",
+          "button": "#1a2a3a",
+          "button_label": "#c6a490",
+          "button_border": "",
+          "secondary_button_label": "#d0b4a6",
+          "accent_color": "#1a2a3a",
+          "line_border": "#dddddd",
+          "overlay": "#000000",
+          "pr_text": "#1a2a3a",
+          "price": "#aaaaaa",
+          "sale_price": "#1a2a3a",
+          "input_primary": "#ffffff",
+          "input_secondary": "#878787"
+        }
       }
     }
   },
