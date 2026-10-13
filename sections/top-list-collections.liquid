@@ -83,11 +83,24 @@
       {%- if section.settings.menu != blank -%}
         {%- for link in section.settings.menu.links -%}
           {%- assign show_section = true -%}
+          {%- if section.settings.ms_card_design == 'design-1' -%}
+          <div class="hdt-slider__slide ms-collection-card{% if link.handle == collection.handle %} hdt-current-active{% endif %}" style="--ms-card-bg: {{ section.settings.ms_card_bg }};--ms-card-padding: {{ section.settings.ms_card_padding | default: '26px 8px 26px 67px' }};--ms-card-margin-e: {{ section.settings.ms_card_margin_e | default: 20 }}px;--ms-card-radius: {{ section.settings.ms_card_radius | default: 12 }}px;--ms-card-padding-mb: {{ section.settings.ms_card_padding_mb | default: '14px 8px' }};">
+            {%- assign ms_coll = collections[link.handle] -%}
+            {%- assign ms_img = ms_coll.featured_image | default: ms_coll.image -%}
+            <a class="ms-collection-link" href="{{ link.url }}">
+              {%- if ms_img != blank -%}
+                {{ ms_img | image_url: width: 170 | image_tag: class: 'ms-collection-img', loading: 'lazy' }}
+              {%- endif -%}
+              <span class="ms-collection-label">{{- link.title -}}</span><span class="ms-collection-arrow">›</span>
+            </a>
+          </div>
+          {%- else -%}
           <div class="hdt-slider__slide{% if link.handle == collection.handle %} hdt-current-active{% endif %}">
             <a href="{{ link.url }}">
               {{- link.title -}}
             </a>
           </div>
+          {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
     {%- when 'metafields' -%}
@@ -109,7 +122,7 @@
 {%- endcapture -%}
 {%- if show_section -%}
   <div class="{% if section.settings.hide_mobile %}hdt-hidden md:hdt-block{% endif %}">
-    <div class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};" {%- endif %}>
+    <div class="{{ parent }} {% if section.settings.hdt_background_parallax %} hdt-animate--parallax-bg {% endif %}{% if section.settings.ms_card_design == 'design-1' %} ms-collection-overflow{% endif %}" {%- if section.settings.colors_by_section %} color-scheme="{{ section.settings.color_scheme }}" style="--background-opacity: {{ section.settings.background_opacity }};" {%- endif %}>
       <div class="{{ child }}">
         {%- if section.settings.section_background != blank -%}
           {% liquid
@@ -117,7 +130,7 @@
           %}
             {{ image | image_url: width: image.width | image_tag: width: image.width, height: image.height, sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000', loading: 'lazy', class: 'hdt-section-background hdt-absolute hdt-top-0 hdt-left-0 hdt-w-full hdt-h-full hdt-pe-none hdt-object-cover hdt-object-center' }}
         {%- endif -%}
-        <div class="hdt-content" style="{% if section.settings.section_layout == 'full_width' %}--container-max-width: 100vw;{% endif %}">
+        <div class="hdt-content{% if section.settings.ms_card_design == 'design-1' %} ms-collection-content{% endif %}" style="{% if section.settings.section_layout == 'full_width' %}--container-max-width: 100vw;{% endif %}">
           <hdt-slider id="Slider-{{ section.id }}" class="hdt-slider hdt-relative hdt-slide-spacing-x hdt-slides-auto" config='{ "id": "Slider-{{ section.id }}", "navUI": {{ section.settings.navUI }}, "align": "center", "classNames": true, "dragFree": true, "slidesToScroll": 1 }'>
             <div class="hdt-slider__viewport hdt-relative">
               <div class="hdt-slider__container">
@@ -314,6 +327,69 @@
       "label": "Padding (Mobile)",
       "placeholder": ",,50px,",
       "visible_if": "{{ section.settings.pd != blank }}"
+    },
+    {
+      "type": "header",
+      "content": "Collection card"
+    },
+    {
+      "type": "select",
+      "id": "ms_card_design",
+      "label": "Card design",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "design-1",
+          "label": "Design 1"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "color",
+      "id": "ms_card_bg",
+      "label": "Card background",
+      "default": "#eee4de",
+      "visible_if": "{{ section.settings.ms_card_design == 'design-1' }}"
+    },
+    {
+      "type": "text",
+      "id": "ms_card_padding",
+      "label": "Card padding",
+      "default": "26px 8px 26px 67px",
+      "visible_if": "{{ section.settings.ms_card_design == 'design-1' }}"
+    },
+    {
+      "type": "range",
+      "id": "ms_card_margin_e",
+      "label": "Card margin end",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "default": 20,
+      "visible_if": "{{ section.settings.ms_card_design == 'design-1' }}"
+    },
+    {
+      "type": "range",
+      "id": "ms_card_radius",
+      "label": "Card radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 12,
+      "visible_if": "{{ section.settings.ms_card_design == 'design-1' }}"
+    },
+    {
+      "type": "text",
+      "id": "ms_card_padding_mb",
+      "label": "Card padding mobile",
+      "default": "14px 8px",
+      "visible_if": "{{ section.settings.ms_card_design == 'design-1' }}"
     }
     ],
     "blocks": [

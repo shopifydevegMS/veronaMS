@@ -1,0 +1,54 @@
+.ms-collection-card {
+  background-color: var(--ms-card-bg, #eee4de);
+  margin-inline-end: var(--ms-card-margin-e, 20px);
+  padding: var(--ms-card-padding, 26px 8px 26px 67px);
+  border-radius: var(--ms-card-radius, 12px);
+}
+.ms-collection-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.ms-collection-img {
+  width: 85px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  margin-inline-end: 8px;
+}
+.ms-collection-arrow {
+  margin-inline-start: 8px;
+}
+.ms-collection-content {
+  width: auto !important;
+}
+.ms-collection-content .hdt-slider__viewport {
+  overflow: visible !important;
+}
+.ms-collection-overflow {
+  overflow: hidden;
+}
+.ms-collection-content .hdt-slider__container {
+  margin-inline: auto;
+}
+@media (max-width: 767px) {
+  .ms-collection-card {
+    padding: var(--ms-card-padding-mb, 14px 8px);
+    margin-inline-end: 7px;
+    border-radius: 10px;
+  }
+  .ms-collection-img {
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    margin-inline-end: 7px;
+  }
+  .ms-collection-arrow {
+    margin-inline-start: 8px;
+  }
+  .ms-collection-label{
+    font-size: 8px;
+    font-weight: 700;
+  }
+}
