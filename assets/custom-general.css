@@ -19,7 +19,7 @@
 }
 .ms-badges-right .hdt-badge__wrapp {
   left: auto !important;
-  right: 5px !important;
+  right: 10px !important;
   align-items: flex-end !important;
 }
 .ms-badges-top-rounded .hdt-badge__wrapp {
@@ -116,6 +116,9 @@
 }
 .ms-gap.hdt-slider {
   --slide-spacing: var(--ms-gap);
+}
+.ms-heading-bg {
+  background-color: var(--ms-heading-bg, transparent);
 }
 h3 {
   font-weight: 700 !important;

@@ -3,11 +3,13 @@
   margin-inline-end: var(--ms-card-margin-e, 20px);
   padding: var(--ms-card-padding, 26px 8px 26px 67px);
   border-radius: var(--ms-card-radius, 12px);
+  align-self: center;
 }
 .ms-collection-link {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
 }
 .ms-collection-img {
   width: 85px;
@@ -31,6 +33,29 @@
 }
 .ms-collection-content .hdt-slider__container {
   margin-inline: auto;
+}
+.hdt-main-section__collection .ms-card-info-box .hdt-card-product {
+  width: auto;
+  max-width: 285px;
+  height: auto;
+  max-height: 440px;
+}
+.hdt-main-section__collection .hdt-pagination-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.ms-main-content {
+  padding: 0;
+}
+.hdt-main-section__collection .ms-card-info-box .hdt-card-product__btn-ultra {
+  width: stretch !important;
+  height: 32px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+.hdt-main-section__collection .ms-card-info-box .hdt-card-product__btn-ultra:hover span:not(.hdt-pr-card-icon) {
+  transform: none !important;
+  opacity: 1 !important;
 }
 @media (max-width: 767px) {
   .ms-collection-card {

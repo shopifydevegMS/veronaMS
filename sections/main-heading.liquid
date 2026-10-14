@@ -46,7 +46,7 @@
     }
   }
 {% endstyle %}
-<div class="hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-relative hdt-oh" color-scheme="{{ section.settings.color_scheme }}">
+<div class="hdt-section-spacing hdt-section-spacing-{{ section.id }} hdt-relative hdt-oh ms-heading-bg" color-scheme="{{ section.settings.color_scheme }}"{% if section.settings.ms_bg != blank %} style="--ms-heading-bg: {{ section.settings.ms_bg }};"{% endif %}>
   <h1 class="sr-only hdt-pe-none">{{ page_title }}</h1>
   <div class="hdt-heading-image hdt-h-overlay hdt-pe-none" style="--bg-overlay:{{ section.settings.bg_overlay | divided_by: 100.00 }};">
     {%- if image != blank -%}
@@ -92,6 +92,15 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "ms_bg",
+      "label": "Background color"
     },
     {
       "type": "range",
